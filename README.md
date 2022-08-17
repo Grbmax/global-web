@@ -1,4 +1,4 @@
-## Don't merge this branch with main, this is a temporary branch for the coming soon page
+## Web Application of ÆR Global
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

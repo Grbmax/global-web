@@ -1,16 +1,17 @@
-@tailwind base
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html,
 body {
   background: black;
-  font-family: Helmet, Helvetica Neue, sans-serif;
+  color: white; 
+  font-family: Playfair Display;
   line-height: 1.1;
   letter-spacing: 0em;
 }
 
-.outline-title {
+/* .outline-title {
   font-family: Helmet;
      color: white;
      text-shadow:
@@ -22,3 +23,6 @@ body {
         font-size: 50px;
   }
 
+ */
+
+ 

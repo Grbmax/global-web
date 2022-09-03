@@ -617,6 +617,28 @@ electron-to-chromium@^1.4.202:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.215.tgz#553372e74bde3164290d61f6792f93e443b16733"
   integrity sha512-vqZxT8C5mlDZ//hQFhneHmOLnj1LhbzxV0+I1yqHV8SB1Oo4Y5Ne9+qQhwHl7O1s9s9cRuo2l5CoLEHdhMTwZg==
 
+embla-carousel-autoplay@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/embla-carousel-autoplay/-/embla-carousel-autoplay-7.0.2.tgz#11b126c4ca9f7ffc78f94e2fba567c5be84be6e4"
+  integrity sha512-QgrxinUHl1eQADo37clP3lUK5rTcMV4/sm9EzgxvwRz8FuKY/HL5sz6iIVjHoPqKc05frLjx+WVlcAJ141VOSA==
+
+embla-carousel-class-names@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/embla-carousel-class-names/-/embla-carousel-class-names-7.0.2.tgz#7546dbc2d2d3585de6e8fd36f359a6f3b59aab9e"
+  integrity sha512-2g4ZHwsdtA4RKjDQ9za8QQw+Zq2GeGBXeZ2nABOsWtd9ixtPM+fzD69bauKUulIHJjeGJMsFZ8D5hEcoXyatfw==
+
+embla-carousel-react@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-7.0.2.tgz#82e48d8fb14adfe6d4ea415cd1ec8a1de40129f8"
+  integrity sha512-x+/8SbytmhY5K7TrVaZ+NWpGfkI2NaOBgdEseExedwTAOW7MQDoo1lE0yEJz0RHwvTLFBupfbbgL/GxMlhWVHA==
+  dependencies:
+    embla-carousel "7.0.2"
+
+embla-carousel@7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-7.0.2.tgz#49660d75d26604de1ca1bb0c0be13e7cae65b0ff"
+  integrity sha512-6SHKbLJRvcjunb0VT1Aw7YwK0Dw8ecqEa+ppT1j+kHGEg5I4WvUd8SjRkc1NAuQK0PTBD0d567UCmzEAngeAxw==
+
 emoji-regex@^9.2.2:
   version "9.2.2"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.2.tgz#840c8803b0d8047f4ff0cf963176b32d4ef3ed72"
@@ -1092,6 +1114,11 @@ grapheme-splitter@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
   integrity sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==
+
+gsap@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.11.0.tgz#5a45da0f35b49e2c479e1e274feb6ac51e86478b"
+  integrity sha512-TV5aFGqXht+0o/CelnhCikSe3QGeG+q1XA/fyFFsMzesILHgWgFWIz0NuXIgcMaL5h7MG2l+j0BTupS5YyYkrw==
 
 has-bigints@^1.0.1, has-bigints@^1.0.2:
   version "1.0.2"

@@ -1,73 +1,17 @@
-@tailwind base
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html,
 body {
   background: black;
-  font-family: Helmet, Helvetica Neue, sans-serif;
+  color: white; 
+  font-family: Playfair Display;
   line-height: 1.1;
   letter-spacing: 0em;
-  display: grid;
-  place-items: center;
 }
 
-.outline-title {
-  font-family: Helmet;
-     color: white;
-     text-shadow:
-         1px 1px 0 #000,
-       -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-         1px 1px 0 #000;
-        font-size: 50px;
-  }
 
-.wrapper{
-    box-sizing: content-box;
-    background-color: #ffffff;
-    height: 70px;
-    padding: 50px 30px;
-    display: flex;
-    border-radius: 8px;
-    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
-}
-.words{
-    overflow: hidden;
-}
-span{
-    display: block;
-    height: 100%;
-    padding-left: 10px;
-    color: #0e6ffc;
-    animation: spin_words 6s infinite;
-}
-@keyframes spin_words{
-    10%{
-        transform: translateY(-112%);
-    }
-    25%{
-        transform: translateY(-100%);
-    }
-    35%{
-        transform: translateY(-212%);
-    }
-    50%{
-        transform: translateY(-200%);
-    }
-    60%{
-        transform: translateY(-312%);
-    }
-    75%{
-        transform: translateY(-300%);
-    }
-    85%{
-        transform: translateY(-412%);
-    }
-    100%{
-        transform: translateY(-400%);
-    }
-}
+
 
 

@@ -10,6 +10,10 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "embla-carousel-autoplay": "^7.0.2",
+    "embla-carousel-class-names": "^7.0.2",
+    "embla-carousel-react": "^7.0.2",
+    "gsap": "^3.11.0",
     "next": "12.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",

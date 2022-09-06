@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tile, TileBackground, TileContent, TileWrapper } from './tile'
-import { CompanyBackground, CompanyContainer } from './Company'
+import { CompanyBackground, CompanyBottom, CompanyContainer, CompanyTop } from './Company'
 
 const Companies = () => (
 <TileWrapper numOfPages={3}>
@@ -11,18 +11,28 @@ const Companies = () => (
     <Tile 
         page={0} renderContent={({progress}) => (
         <CompanyContainer>
-            <span className='text-9xl'>Foo {progress} </span>
+            <CompanyTop>Foo {progress}</CompanyTop>
+
+            <CompanyBottom>Foo {progress}</CompanyBottom>
         </CompanyContainer>
         )}
     ></Tile>
     <Tile 
         page={1} renderContent={({progress}) => (
-        <span className='text-9xl'>Boo {progress} </span>
+        <CompanyContainer>
+            <CompanyTop>Boo {progress}</CompanyTop>
+
+            <CompanyBottom>Boo {progress}</CompanyBottom>
+        </CompanyContainer>
         )}
     ></Tile>
     <Tile 
         page={2} renderContent={({progress}) => (
-        <span className='text-9xl'>Moo {progress} </span>
+        <CompanyContainer>
+            <CompanyTop>Moo {progress}</CompanyTop>
+
+            <CompanyBottom>Moo {progress}</CompanyBottom>
+        </CompanyContainer>
         )}
     ></Tile>    
     </TileContent>

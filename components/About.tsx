@@ -1,5 +1,4 @@
-import React from 'react'
-import 
+import React from 'react' 
 const About = () => {
   return (
     <div className='mx-24'>
@@ -16,7 +15,7 @@ const About = () => {
       </p>  
     </div>
 
-      <span class="GiCrane"></span>
+      <span className="GiCrane"></span>
 
 
     </div>

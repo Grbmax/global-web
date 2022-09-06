@@ -6,7 +6,7 @@ html,
 body {
   background: black;
   color: white; 
-  font-family: Playfair Display;
+  font-family: 'Times New Roman', Times, serif;
   line-height: 1.1;
   letter-spacing: 0em;
 }

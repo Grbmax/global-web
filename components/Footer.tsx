@@ -11,30 +11,40 @@ const Footer = () => {
             <div className={styles.footerbgimg}>
                 <div className="flex flex-wrap">
                     <div className='contact md:w-1/2 lg:w-1/2'>
-                        <div className='flex text-2xl font-extrabold justify-center items-center p-5'>
+                        <div className='flex text-2xl font-extrabold justify-center items-center p-5 '>
                             Got An Idea ?
                         </div>
-                        <div className='flex text-xl font-extrabold justify-center items-center'>
+                        <div className='flex text-xl font-extrabold justify-center items-center pb-5'>
                             We’d love to hear all about it.
                         </div>
                         <div className="lg:w-1/2 md:w-2/3 mx-auto">
                             <div className="flex flex-wrap -m-2">
                                 <div className="p-2 ml-10 mr-10 w-full">
                                     <div className="relative">
-
-                                        <input type="text" id="name" value={"name"} className="w-full bg-transparent rounded-lg border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                                        <input 
+                                        type="text" 
+                                        id="name" 
+                                        placeholder='Name' 
+                                        className="w-full bg-transparent rounded-lg border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                                     </div>
 
                                 </div>
                                 <div className="p-2 ml-10 mr-10 w-full ">
                                     <div className="relative">
-                                        <input type="email" id="email" value={"Email"} className="w-full bg-transparent rounded-lg border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                                        <input 
+                                        type="email" 
+                                        id="email" 
+                                        placeholder='Email' 
+                                        className="w-full bg-transparent rounded-lg border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                                     </div>
                                 </div>
                                 <div className="p-2 ml-10 mr-10 w-full ">
                                     <div className="relative">
-
-                                        <input type="email" id="email" value={"Contact"} className="w-full bg-transparent  rounded-lg border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                                        <input 
+                                        type="email" 
+                                        id="email" 
+                                        placeholder='Contact' 
+                                        className="w-full bg-transparent  rounded-lg border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                                     </div>
                                 </div>
                                 <div className="p-2 w-full">
@@ -46,24 +56,24 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className=" list-none md:w-1/2 lg:w-1/2 p-5 items-center justify-center ">
-                        <li className='text-2xl font-extrabold '>
+                    <div className="address md:w-1/2 lg:w-1/2  ">
+                        <p className='text-2xl flex flex-col font-extrabold items-center justify-center p-5'>
                             ÆR Global
-                        </li>
-                        <div className="  p-5">
-                            <li className=' flex-auto text-xl justify-left p-2'>
+                        </p>
+                        <p className="p-5 flex flex-col justify-center" >
+                            <span className='flex-auto text-xl'>
                                 contact@aerglobal.io
-                            </li>
-                            <li className='flex-auto text-xl justify-left p-3'>
+                            </span><br />
+                            <span className='text-xl '>
                                 Contact: 8888341111
-                            </li>
-                            <li className='flex-auto text-xl justify-left p-3'>
+                            </span><br />
+                            <span className='flex-auto text-xl '>
                                 Address:
-                            </li>
-                            <li className='flex-auto text-xl justify-left '>
+                            </span><br />
+                            <span className='flex-auto text-xl '>
                                 905, Dalamal Tower, Nariman Point
-                            </li>
-                        </div>
+                            </span>
+                        </p>
 
                     </div>
 
@@ -72,22 +82,22 @@ const Footer = () => {
                     <div className='w-full md:w-1/2 lg:w-1/2'>
                         <span className='text-3xl'>
                             Subscribe
-                        </span>
+                        </span><br />
                         <div className='flex'>
-                            
-                            <input className='p-1 bg-transparent border-b-2 w-full' value={'email'} />
+
+                            <input className='p-1 bg-transparent border-b-2 w-full' placeholder='Email' />
                             <FiSend className="text-2xl cursor-pointer hover:text-blue-600" />
 
                         </div>
                     </div>
 
-                    <div className="social p-5 flex w-1/2 justify-center">
+                    <div className="social flex flex-col p-5 justify-center items-center">
                         <span className='text-3xl'>
                             Stay Connected
-                        </span><br />
+                        </span>
                         <div className="flex flex-row gap-6 pb-5 m-2">
                             <FaInstagram className="text-2xl cursor-pointer hover:text-pink-600" />
-                            <Link href='https://www.facebook.com/Dekhanee'>
+                            <Link href=''>
                                 <FiFacebook className="text-2xl cursor-pointer hover:text-blue-600" />
                             </Link>
                             <FiMail className="text-2xl cursor-pointer hover:text-yellow-600" />
@@ -99,8 +109,8 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div className='bg-black w-full h-10 flex justify-center items-center'>
-            ©Copyrights ÆR Media 
+            <div className='copyright bg-black w-full h-10 flex justify-center items-center'>
+                ©Copyrights ÆR Media
 
             </div>
         </>

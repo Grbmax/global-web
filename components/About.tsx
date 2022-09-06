@@ -1,11 +1,13 @@
 import React from 'react'
-import 
+import { CgCamera } from 'react-icons/cg';
+import { GiCrane } from 'react-icons/gi';
+import { FcMoneyTransfer } from 'react-icons/fc';
 const About = () => {
   return (
-    <div className='mx-24'>
+    <div className='mx-24 my-8'>
 
     <div className='text-center py-6'>
-      <h1 className='font-light text-2xl text-gray-400'>Who We Are</h1>
+      <h1 className='font-light text-base text-gray-400'>Who We Are</h1>
       <h1 className='font-bold text-4xl'>AER is about your business!</h1>
     </div>
 
@@ -16,8 +18,11 @@ const About = () => {
       </p>  
     </div>
 
-      <span class="GiCrane"></span>
-
+    <div className='flex space-x-20 justify-center py-12'>
+    <span className='text-5xl'><CgCamera /></span>
+    <span className='text-5xl'><GiCrane /></span>
+    <span className='text-5xl'><FcMoneyTransfer /></span>
+    </div>  
 
     </div>
     

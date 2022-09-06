@@ -1,10 +1,7 @@
-
 import React from 'react'
 import { CgCamera } from 'react-icons/cg';
 import { GiCrane } from 'react-icons/gi';
 import { FcMoneyTransfer } from 'react-icons/fc';
-
-import React from 'react' 
 
 const About = () => {
   return (

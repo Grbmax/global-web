@@ -1,11 +1,15 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
+import { FaInstagram } from "react-icons/fa";
+import { FiFacebook, FiMail, FiTwitter, FiSend } from "react-icons/fi";
+
+import Link from "next/link";
 
 const Footer = () => {
     return (
         <>
             <div className={styles.footerbgimg}>
-                <div className="flex-grow flex flex-wrap">
+                <div className="flex flex-wrap">
                     <div className='contact md:w-1/2 lg:w-1/2'>
                         <div className='flex text-2xl font-extrabold justify-center items-center p-5'>
                             Got An Idea ?
@@ -17,20 +21,20 @@ const Footer = () => {
                             <div className="flex flex-wrap -m-2">
                                 <div className="p-2 ml-10 mr-10 w-full">
                                     <div className="relative">
-                                        <label className="leading-7 text-sm text-gray-300">Name</label>
-                                        <input type="text" id="name" name="name" className="w-full bg-transparent rounded-lg border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+
+                                        <input type="text" id="name" value={"name"} className="w-full bg-transparent rounded-lg border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                                    </div>
+
+                                </div>
+                                <div className="p-2 ml-10 mr-10 w-full ">
+                                    <div className="relative">
+                                        <input type="email" id="email" value={"Email"} className="w-full bg-transparent rounded-lg border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                                     </div>
                                 </div>
                                 <div className="p-2 ml-10 mr-10 w-full ">
                                     <div className="relative">
-                                        <label className="leading-7 text-sm text-gray-300">Email</label>
-                                        <input type="email" id="email" name="email" className="w-full bg-transparent rounded-lg border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-                                    </div>
-                                </div>
-                                <div className="p-2 ml-10 mr-10 w-full ">
-                                    <div className="relative">
-                                        <label className="leading-7 text-sm text-gray-300">Contact</label>
-                                        <input type="email" id="email" name="email" className="w-full bg-transparent  rounded-lg border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+
+                                        <input type="email" id="email" value={"Contact"} className="w-full bg-transparent  rounded-lg border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                                     </div>
                                 </div>
                                 <div className="p-2 w-full">
@@ -41,14 +45,63 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
- 
-                    <div className="flex md:w-1/2 lg:w-1/2 justify-center items-center ">
-                        <div className=" text-2xl font-extrabold ">
+
+                    <div className=" list-none md:w-1/2 lg:w-1/2 p-5 items-center justify-center ">
+                        <li className='text-2xl font-extrabold '>
                             ÆR Global
+                        </li>
+                        <div className="  p-5">
+                            <li className=' flex-auto text-xl justify-left p-2'>
+                                contact@aerglobal.io
+                            </li>
+                            <li className='flex-auto text-xl justify-left p-3'>
+                                Contact: 8888341111
+                            </li>
+                            <li className='flex-auto text-xl justify-left p-3'>
+                                Address:
+                            </li>
+                            <li className='flex-auto text-xl justify-left '>
+                                905, Dalamal Tower, Nariman Point
+                            </li>
                         </div>
+
                     </div>
 
                 </div>
+                <div className="subscribe p-16 flex flex-wrap ">
+                    <div className='w-full md:w-1/2 lg:w-1/2'>
+                        <span className='text-3xl'>
+                            Subscribe
+                        </span>
+                        <div className='flex'>
+                            
+                            <input className='p-1 bg-transparent border-b-2 w-full' value={'email'} />
+                            <FiSend className="text-2xl cursor-pointer hover:text-blue-600" />
+
+                        </div>
+                    </div>
+
+                    <div className="social p-5 flex w-1/2 justify-center">
+                        <span className='text-3xl'>
+                            Stay Connected
+                        </span><br />
+                        <div className="flex flex-row gap-6 pb-5 m-2">
+                            <FaInstagram className="text-2xl cursor-pointer hover:text-pink-600" />
+                            <Link href='https://www.facebook.com/Dekhanee'>
+                                <FiFacebook className="text-2xl cursor-pointer hover:text-blue-600" />
+                            </Link>
+                            <FiMail className="text-2xl cursor-pointer hover:text-yellow-600" />
+                            <FiTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div className='bg-black w-full h-10 flex justify-center items-center'>
+            ©Copyrights ÆR Media 
+
             </div>
         </>
     )

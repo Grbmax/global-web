@@ -3,7 +3,7 @@ import { ScrollContext } from '../utils/scroll-observer'
 
 type CProps = {
     children?: React.ReactNode
-};
+}
 
 interface WrapperProps {
     numOfPages: number

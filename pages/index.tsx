@@ -1,10 +1,14 @@
 import React, { useRef, useContext, useState, useCallback} from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Companies from './companies'
-import Footer from '../components/Footer'
+import Companies from '../components/Companies'
 import About from '../components/About'
+
 import MissionStatement from '../components/MissionStatement'
+
+import Footer from '../components/Footer'
+
+
 
 
 const Home: NextPage = () => {
@@ -16,11 +20,18 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         
       </Head>
+
       
       <About />
 
       <MissionStatement />
     
+
+      <About />
+      <Companies />
+
+      <Footer />
+
     </div>
   )
 }

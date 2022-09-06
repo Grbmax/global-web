@@ -20,7 +20,7 @@ type Left = {
 
 export const CompanyContainer: React.FC<Props> = ({ top, children, bottom }) => (
     <div>
-        <div className='flex flex-row items-center w-full py-2 md:text-xl lg:text-[32px] 
+        <div className='flex flex-row items-center w-full md:text-xl lg:text-[32px] 
         top-5 absolute text-white'>
             {top}
          </div>
@@ -35,7 +35,7 @@ export const CompanyContainer: React.FC<Props> = ({ top, children, bottom }) => 
 )
 
 export const CompanyTop: React.FC<Props> = ({ children }) => (
-    <div className='flex flex-row items-center w-full py-2 md:text-xl lg:text-[32px] 
+    <div className='items-center w-full md:text-xl py-2 lg:text-[32px] 
     top-5 absolute  text-white'>
         {children}
     </div>
@@ -69,11 +69,11 @@ export const CompanyRight: React.FC<Right> = ({ children, progress }) => {
 export const CompanyLeft: React.FC<Left> = ({ children, progress }) => {
     let translateY = Math.max(-50, -(progress - 0.5) * 50)
     return (
-        <div className='flex flex-1 lg:items-center justify-center' 
+        <div className='flex flex-1 justify-center' 
         style={{
             transform: `translateY(${translateY}px)`
         }}>
-            <div className='w-full max-w-md pt-0 lg:pt-0 px-10 md:px-0'>
+            <div className='w-full max-w-md pt-0 lg:pt-48 px-10 md:px-0'>
                 {children}
             </div>
         </div>

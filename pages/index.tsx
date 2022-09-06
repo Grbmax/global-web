@@ -6,6 +6,7 @@ import About from '../components/About'
 import Footer from '../components/Footer'
 
 
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       </Head>
       <About />
       <Companies />
+
       <Footer />
     </div>
   )

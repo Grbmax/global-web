@@ -1,7 +1,7 @@
 import React from 'react'
 import { CgCamera } from 'react-icons/cg';
 import { GiCrane } from 'react-icons/gi';
-import { FcMoneyTransfer } from 'react-icons/fc';
+import { BiMoney } from 'react-icons/bi';
 
 const About = () => {
   return (
@@ -25,10 +25,10 @@ const About = () => {
         <div className='flex space-x-20 justify-center py-12'>
           <span className='text-5xl'><CgCamera /></span>
           <span className='text-5xl'><GiCrane /></span>
-          <span className='text-5xl'><FcMoneyTransfer /></span>
+          <span className='text-5xl'><BiMoney /></span>
         </div>
 
-        <span className="GiCrane"></span>
+        
 
 
       </div>

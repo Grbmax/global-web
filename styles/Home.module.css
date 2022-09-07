@@ -1,5 +1,7 @@
 .footerbgimg {
     background-image: url(../public/assets/footer.jpg);
     background-size: cover;
+    overflow-x: hidden;
 
 }
+

@@ -1,8 +1,31 @@
-import React from 'react'
+import React, { useRef, useContext } from 'react'
+import styles from '../styles/Home.module.css'
+import s from '../styles/mission.module.css'
+import { ScrollContext } from '../utils/scroll-observer'
+
+const opacityForBlock = (sectionProgress: number, blockNo: number) => {
+  const progress = sectionProgress - blockNo
+  if (progress >= 0 && progress < 1) return 1
+  return 0.2
+}
 
 const MissionStatement = () => {
-  return (
+  const { scrollY } = useContext(ScrollContext)
+  const refContainer = useRef<HTMLDivElement>(null)
 
+  const numOfPages = 4
+  let progress = 0
+
+  const { current: elContainer } = refContainer
+  if (elContainer) {
+    const { clientHeight, offsetTop } = elContainer
+    const screenH = window.innerHeight
+    const halfH = screenH / 2
+    const percentY = Math.min(clientHeight + halfH,
+      Math.max(-screenH, scrollY - offsetTop) + halfH) / clientHeight
+    progress = Math.min(numOfPages - 0.5, Math.max(0.5, percentY * numOfPages))
+  }
+  return (
     <>
 
       <div ref={refContainer} className={`${s.missionBG} bg-black text-white`}>
@@ -34,7 +57,6 @@ const MissionStatement = () => {
       </div>
 
     </>
-
   )
 }
 

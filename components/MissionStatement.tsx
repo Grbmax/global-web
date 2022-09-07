@@ -35,7 +35,7 @@ const MissionStatement = () => {
             <div className={s.missionText}
               style={{
                 opacity: opacityForBlock(progress, 0)
-              }}>To Create, Craft and Connect With influencial Entrepreneurs</div>
+              }}>To Create, Craft and Connect With influencial Entrepreneurs hello</div>
             <span className={`${s.missionText} inline-block after:content-['_']`}
               style={{
                 opacity: opacityForBlock(progress, 1)
@@ -45,15 +45,11 @@ const MissionStatement = () => {
                 opacity: opacityForBlock(progress, 2)
               }}> Transform their businesses</span><br />
             <span className={`${s.missionText} inline-block `} style={{
-                opacity: opacityForBlock(progress, 3)
-              }}> And help make a significant Impact on the world.</span>
+              opacity: opacityForBlock(progress, 3)
+            }}> And help make a significant Impact on the world.</span>
 
           </div>
 
-          {/* <p className='leading-tight max-w-5xl mx-auto text-4xl  tracking-tight'>
-            <strong>To Create, Craft and Connect With influencial Entrepreneurs Who are driving change, Transform their businesses And help make a significant Impact on the world.</strong>
-          
-          </p> */}
         </div>
 
 

@@ -1,4 +1,4 @@
-import { sql_query } from '../../lib/db'
+import { sql_query } from '../../../lib/db'
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(req: NextApiRequest , res: NextApiResponse) {

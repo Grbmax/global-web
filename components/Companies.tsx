@@ -4,7 +4,6 @@ import { CompanyBottom, CompanyContainer, CompanyLeft, CompanyRight, CompanyTop 
 import Image from 'next/image'
 
 const Companies = () => (
-
     <TileWrapper numOfPages={3}>
         <TileBackground>
         </TileBackground>
@@ -85,7 +84,6 @@ const Companies = () => (
             ></Tile>
         </TileContent>
     </TileWrapper>
-
 )
 
 export default Companies

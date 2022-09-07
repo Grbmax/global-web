@@ -1,0 +1,11 @@
+.missionText {
+    transition: opacity 0.4s;
+}
+
+.missionBG {
+    background-image: url(../public/assets/missionimg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 780px;
+    width: 780px;
+}

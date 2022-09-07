@@ -20,7 +20,7 @@ type Left = {
 
 export const CompanyContainer: React.FC<Props> = ({ top, children, bottom }) => (
     <div>
-        <div className=''>
+        <div className='top'>
             {top}
          </div>
         <div className='grid grid-cols lg:grid-cols-2 w-full h-screen  py-28 gap-16 '>

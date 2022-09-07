@@ -10,8 +10,10 @@ const Footer = () => {
         <>
             <div className={styles.footerbgimg}>
                 <div className="flex flex-wrap">
-                    <div className='contact md:w-1/2 lg:w-1/2'>
-                        <div className='flex text-2xl font-extrabold justify-center items-center p-5 '>
+
+                    <div className='contacts w-full md:w-full lg:w-1/2'>
+                        <div className='flex text-3xl font-extrabold justify-center items-center p-5 '>
+
                             Got An Idea ?
                         </div>
                         <div className='flex text-xl font-extrabold justify-center items-center pb-5'>

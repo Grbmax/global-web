@@ -14,7 +14,7 @@ const Companies = () => (
                 renderContent={({ progress }) => (
                     <CompanyContainer>
                         <CompanyTop>
-                            <span>AER MEDIA AER MEDIA AER MEDIA AER MEDIA AER MEDIA</span>
+                            <span>AER MEDIA AER MEDIA AER MEDIA AER MEDIA AER MEDIA AER MEDIA </span>
                         </CompanyTop>
                         <CompanyLeft progress={progress}>
                             <Image src="/assets/mediahero.png"

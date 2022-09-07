@@ -20,15 +20,13 @@ type Left = {
 
 export const CompanyContainer: React.FC<Props> = ({ top, children, bottom }) => (
     <div>
-        <div className='flex flex-row items-center w-full md:text-xl lg:text-[32px] 
-        top-5 absolute text-white'>
+        <div className='top'>
             {top}
          </div>
         <div className='grid grid-cols lg:grid-cols-2 w-full h-screen px-16 py-28 gap-16'>
         {children}
         </div>
-        <div className='flex flex-row items-center w-full py-2 md:text-xl lg:text-[32px] 
-        bottom-5 absolute text-white'>
+        <div className=''>
             {bottom}
         </div>
     </div>
@@ -36,14 +34,14 @@ export const CompanyContainer: React.FC<Props> = ({ top, children, bottom }) => 
 
 export const CompanyTop: React.FC<Props> = ({ children }) => (
     <div className='items-center w-full md:text-xl py-2 lg:text-[32px] 
-    top-5 absolute  text-white'>
+    top-2 absolute  text-white'>
         {children}
     </div>
 )
 
 export const CompanyBottom: React.FC<Props> = ({ children }) => (
     <div className='flex flex-row items-center w-full py-2 md:text-xl lg:text-[32px] 
-    bottom-5 absolute text-white'>
+    -bottom-2 absolute text-white'>
         {children}
     </div>
 )

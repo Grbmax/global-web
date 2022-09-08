@@ -9,6 +9,7 @@ export default async function handler(req: NextApiRequest , res: NextApiResponse
             `SELECT email FROM newsletter WHERE email = '${email}'`    
         )
         if (new_results.length !== 0){
+            console.log("You are already subscribed!")
             return res.status(201).json({ message: "You are already subscribed!" })
         }
         const results = await sql_query (

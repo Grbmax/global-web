@@ -6,7 +6,7 @@ import { FcMoneyTransfer } from 'react-icons/fc';
 const About = () => {
   return (
     <>
-    
+
       <div className='mx-24 my-8'>
 
         <div className='text-center py-6'>
@@ -14,11 +14,24 @@ const About = () => {
           <h1 className='font-bold text-4xl'>ÆR is about your business!</h1>
         </div>
 
-        <div className='py-2'>
-          <p className='text-xl py-2 text-left'>We made a new start. A start that will build beautiful<br />relationships,shape millions of ideas: Enable a new way<br />to live, learn, work and earn.<br />At AER, we build products and services of the future to<br />make your business dreams a reality.
-          </p>
-          <p className='text-xl py-2 text-right'>We made a new start. A start that will build beautiful<br />relationships,shape millions of ideas: Enable a new way<br />to live, learn, work and earn.<br />At AER, we build products and services of the future to<br />make your business dreams a reality.
-          </p>
+        <div className='py-2 gap-6 '>
+          <div className='text-justify '>
+            <p className='text-xl py-10  text-left'>
+              We made a new start. A start that will build beautiful
+              relationships,shape millions of ideas: Enable a new way
+              to live, learn, work and earn. At AER, we build products
+              and services of the future to make your business dreams a reality.
+            </p>
+          </div>
+          <div className='text-justify'>
+            <p className='text-xl py-10 w-full text-right'>
+              We made a new start. A start that will build beautiful
+              relationships,shape millions of ideas: Enable a new way
+              to live, learn, work and earn. At AER, we build products
+              and services of the future to make your business dreams a
+              reality.
+            </p>
+          </div>
         </div>
 
 

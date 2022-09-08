@@ -49,7 +49,11 @@ const Footer = () => {
                                         </div>
                                     </div>
                                     <div className="p-2 pb-10 w-full">
-                                        <button className="flex mx-auto text-white bg-transparent border-2 py-2 px-8 focus:outline-none hover:bg-white hover:text-black rounded text-lg">
+                                        <button type='submit' 
+                                        className="flex mx-auto text-white
+                                         bg-transparent border-2 py-2 px-8
+                                         focus:outline-none hover:bg-white
+                                          hover:text-black rounded text-lg">
                                             Let's Talk
                                         </button>
                                     </div>
@@ -91,8 +95,10 @@ const Footer = () => {
                             Subscribe
                         </span><br />
                         <div className='flex py-8'>
-                            <input className='bg-transparent border-b-2 w-full' placeholder='Enter Email' />
-                            <FiSend className="text-3xl cursor-pointer hover:text-blue-600" />
+                            <input className='bg-transparent focus:outline-none border-b-2 w-full' placeholder='Enter Email' />
+                            <button type="submit">
+                                <FiSend className="text-3xl cursor-pointer hover:text-blue-600" />
+                            </button>
                         </div>
                     </div>
 

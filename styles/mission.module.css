@@ -9,3 +9,11 @@
     height: 780px;
     width: 780px;
 }
+
+.missionBGText {
+    background-image: url(../public/assets/MissionStatementText.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 750px;
+    width: auto;
+}

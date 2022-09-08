@@ -19,7 +19,7 @@ type Left = {
 }
 
 export const CompanyContainer: React.FC<Props> = ({ top, children }) => (
-    <div>
+    <div id="companies">
   
         <div className='grid grid-cols lg:grid-cols-2 w-full h-screen py-14 lg:py-28 sm:gap-0 md:gap-2 lg:gap-5'>
             {children}

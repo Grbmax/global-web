@@ -51,9 +51,9 @@ export const TileWrapper: React.FC<WrapperProps> = ({
     ) 
 }
 
-export const TileBackground: React.FC<CProps> = ({ children }) => (
+/* export const TileBackground: React.FC<CProps> = ({ children }) => (
     <div className='absolute h-full w-full'>{children}</div>
-)
+) */
 
 export const TileContent: React.FC<CProps> = ({ children }) => (
     <div className='sticky top-0 h-screen overflow-hidden'>{children}</div>

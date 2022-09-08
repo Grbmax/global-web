@@ -1,11 +1,12 @@
 .missionText {
     transition: opacity 0.4s;
+
 }
 
 .missionBG {
-    background-image: url(../public/assets/missionimg.png);
+    background-image: url(../public/assets/MissionText.png);
     background-repeat: no-repeat;
+    background-size: auto;
     background-position: right;
-    height: 780px;
-    width: 780px;
+    background-position-y: center;
 }

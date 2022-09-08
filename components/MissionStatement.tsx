@@ -1,7 +1,11 @@
+import Image from 'next/image'
 import React, { useRef, useContext } from 'react'
 import styles from '../styles/Home.module.css'
 import s from '../styles/mission.module.css'
 import { ScrollContext } from '../utils/scroll-observer'
+import MSText from '../public/assets/MissionStatementText.png'
+import MSBG from '../public/assets/missionimg.png'
+
 
 const opacityForBlock = (sectionProgress: number, blockNo: number) => {
   const progress = sectionProgress - blockNo
@@ -28,33 +32,47 @@ const MissionStatement = () => {
   return (
     <>
 
-      <div ref={refContainer} className={`${s.missionBG} bg-black text-white`}>
+      <div ref={refContainer} className="">
+        <div className={`${s.missionBG}`}>
+          <div className='flex flex-col md:flex-col lg:flex-row'>
 
-        <div className="min-h-screen max-w mx-auto px-10 lg:px-5 py-24 md:py-28 lg:py-36 flex flex-col justify-center text-2xl md:text-3xl lg:text-4xl tracking-tight font-semibold">
-          <div className='leading-[1.15]'>
-            <div className={s.missionText}
-              style={{
-                opacity: opacityForBlock(progress, 0)
-              }}>To Create, Craft and Connect With influencial Entrepreneurs hello</div>
-            <span className={`${s.missionText} inline-block after:content-['_']`}
-              style={{
-                opacity: opacityForBlock(progress, 1)
-              }}> Who are driving change,</span><br />
-            <span className={`${s.missionText} inline-block `}
-              style={{
-                opacity: opacityForBlock(progress, 2)
-              }}> Transform their businesses</span><br />
-            <span className={`${s.missionText} inline-block `} style={{
-              opacity: opacityForBlock(progress, 3)
-            }}> And help make a significant Impact on the world.</span>
+            <div className="flex w-full py-5 lg:py-10 px-10 justify-center items-center 
+          text-2xl md:text-3xl lg:text-4xl font-semibold">
 
+              <div className='leading-[1.15]  '>
+                <span className={`{s.missionText} `}
+                  style={{
+                    opacity: opacityForBlock(progress, 0)
+                  }}>To Create, Craft and Connect <br />
+                  With influencial Entrepreneurs
+                </span><br />
+
+                <span className={`${s.missionText}  inline-block after:content-['_']`}
+                  style={{
+                    opacity: opacityForBlock(progress, 1)
+                  }}> Who are driving change,<br />
+                  Transform their businesses</span><br />
+
+                <span className={`${s.missionText}  inline-block `} style={{
+                  opacity: opacityForBlock(progress, 2)
+                }}> And help make a significant<br />
+                  Impact on the world.</span>
+
+              </div>
+
+            </div>
+              <div className='flex w-full'>
+                <Image
+                  src={MSBG}
+
+                />
+              </div>
           </div>
 
         </div>
 
-
-
       </div>
+
 
     </>
   )

@@ -7,11 +7,11 @@ import { useForm } from 'react-hook-form';
 import Link from "next/link";
 
 const Footer = () => {
-    const { register, handleSubmit, formState: {errors}, } = useForm();
+    const { register, handleSubmit, formState: { errors }, } = useForm();
     const onSubmit = async (values: any) => {
         try {
-            const response = await 
-            axios.post(`${window.location.origin}/api/data/newsletter`, values)
+            const response = await
+                axios.post(`${window.location.origin}/api/data/newsletter`, values)
             if (response.status == 200) {
                 console.log("Success!")
             } else if (response.status == 201) {
@@ -81,11 +81,13 @@ const Footer = () => {
                                         </div>
                                     </div>
                                     <div className="p-2 pb-10 w-full">
-                                        <button className="flex mx-auto text-white bg-transparent 
+                                       {/*  <in className="flex mx-auto text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
-                                        hover:text-black rounded text-lg">
+                                        hover:text-black rounded-xl text-lg" type="submit" >
                                             Let's Talk
-                                        </button>
+                                        </button> */}
+                                        
+                                        <input type='submit' name='lets talk'/>
                                     </div>
                                 </div>
                             </div>
@@ -123,28 +125,34 @@ const Footer = () => {
                         <span className='text-3xl'>
                             Subscribe
                         </span><br />
-                        <form 
-                        onSubmit={handleSubmit(onSubmit)}
-                        className='flex py-8'>
+                        <form
+                            onSubmit={handleSubmit(onSubmit)}
+                            className='flex py-8 '>
                             <input
-                            id='emailID'
-                            className='bg-transparent border-b-2 w-full' 
-                            {...register("email", {
-                                required: {
-                                    value: true,
-                                    message: "Valid Email ID is required",
-                                },
-                                maxLength: {
-                                    value: 120,
-                                    message: "You exceeded the maximum limit",
-                                },
-                                minLength: {
-                                    value: 8,
-                                    message: "Too short to be an Email ID",
-                                },
-                            })}
-                            placeholder='Enter Email' />
-                            <FiSend className="text-3xl cursor-pointer hover:text-blue-600" />
+                                id='emailID'
+                                className='bg-transparent border-b-2 w-full outline-none'
+                                {...register("email", {
+                                    required: {
+                                        value: true,
+                                        message: "Valid Email ID is required",
+                                    },
+                                    maxLength: {
+                                        value: 120,
+                                        message: "You exceeded the maximum limit",
+                                    },
+                                    minLength: {
+                                        value: 8,
+                                        message: "Too short to be an Email ID",
+                                    },
+                                })}
+                                placeholder='Enter Email' />
+                               
+
+
+                                    <FiSend className="text-3xl cursor-pointer hover:text-blue-600" />
+                            <input type="submit"/>
+                             
+
                         </form>
                     </div>
 

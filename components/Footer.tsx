@@ -22,6 +22,20 @@ const Footer = () => {
         }
     };
 
+    const onAppointment =async (values: any) => {
+        try {
+            const response = await
+                axios.post(`${window.location.origin}/api/data/appointment`, values)
+            if (response.status == 200) {
+                console.log("Success!")
+            } else if (response.status == 201) {
+                console.log(response.data.message)
+            }
+        } catch (error) {
+            console.log("Something went wrong!")
+        }
+    }
+
     return (
         <>
             <div className={styles.footerbgimg}>
@@ -33,7 +47,7 @@ const Footer = () => {
                         <div className='flex text-xl font-extrabold justify-center items-center pb-5'>
                             We’d love to hear all about it.
                         </div>
-                        <form>
+                        <form onSubmit={handleSubmit(onAppointment)}>
                             <div className="lg:w-1/2 md:w-2/3 mx-auto">
                                 <div className="flex flex-wrap -m-2">
                                     <div className="p-2 ml-10 mr-10 md:ml-5 md:mr-5 lg:ml-0 
@@ -47,22 +61,48 @@ const Footer = () => {
                                                  border-gray-300 focus:border-indigo-500
                                                   focus:bg-white focus:ring-2 focus:ring-indigo-200 
                                                   text-base outline-none text-gray-300 py-1 px-3 leading-8 
-                                                  transition-colors duration-200 ease-in-out" />
+                                                  transition-colors duration-200 ease-in-out"
+                                                  {...register("username", {
+                                                    required: { value: true, message: "Name is required." },
+                                                    minLength: {
+                                                        value: 2, 
+                                                        message: "Name is too short.",
+                                                    },                                                
+                                                })}
+                                                  />
                                         </div>
-
                                     </div>
                                     <div className="p-2 ml-10 mr-10 md:ml-5 md:mr-5 lg:ml-0 
                                     lg:mr-0 w-full ">
                                         <div className="relative">
                                             <input
                                                 type="email"
-                                                id="AppointmentEmail"
+                                                id="AEmail"
                                                 placeholder='Email'
                                                 className="w-full bg-transparent rounded-lg border 
                                                 border-gray-300 focus:border-indigo-500 
                                                 focus:bg-white focus:ring-2 focus:ring-indigo-200 
                                                 text-base outline-none text-gray-300 py-1 px-3 
-                                                leading-8 transition-colors duration-200 ease-in-out" />
+                                                leading-8 transition-colors duration-200 ease-in-out" 
+                                                {...register("AEmail", {
+                                                    required: {
+                                                        value: true,
+                                                        message: "Valid Email ID is required",
+                                                    },
+                                                    maxLength: {
+                                                        value: 120,
+                                                        message: "You exceeded the maximum limit",
+                                                    },
+                                                    minLength: {
+                                                        value: 8,
+                                                        message: "Too short to be an Email ID",
+                                                    },
+                                                    pattern: {
+                                                        value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+                                                        message: "Email id must be valid",
+                                                    },
+                                                })}
+                                                />
                                         </div>
                                     </div>
                                     <div className="p-2 ml-10 mr-10 md:ml-5 md:mr-5 lg:ml-0 lg:mr-0
@@ -77,7 +117,15 @@ const Footer = () => {
                                                 focus:bg-white focus:ring-2 focus:ring-indigo-200 
                                                 text-base outline-none text-gray-300 py-1 px-3 
                                                 leading-8 
-                                                transition-colors duration-200 ease-in-out" />
+                                                transition-colors duration-200 ease-in-out"
+                                                {...register("contact" , {
+                                                    required: { value: true, message:"Contact is required"},
+                                                    pattern: {
+                                                        value: /^(\+91)?\d{10}$/,
+                                                        message: "Mobile number must be valid",
+                                                    },
+                                                })}
+                                                />
                                         </div>
                                     </div>
                                     <div className="p-2 pb-10 w-full">
@@ -143,6 +191,10 @@ const Footer = () => {
                                     minLength: {
                                         value: 8,
                                         message: "Too short to be an Email ID",
+                                    },
+                                    pattern: {
+                                        value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+                                        message: "Email id must be valid",
                                     },
                                 })}
                                 placeholder='Enter Email' />

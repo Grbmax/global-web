@@ -46,7 +46,7 @@ const Footer = () => {
                                                 className="w-full bg-transparent rounded-lg border
                                                  border-gray-300 focus:border-indigo-500
                                                   focus:bg-white focus:ring-2 focus:ring-indigo-200 
-                                                  text-base outline-none text-gray-700 py-1 px-3 leading-8 
+                                                  text-base outline-none text-gray-300 py-1 px-3 leading-8 
                                                   transition-colors duration-200 ease-in-out" />
                                         </div>
 
@@ -61,7 +61,7 @@ const Footer = () => {
                                                 className="w-full bg-transparent rounded-lg border 
                                                 border-gray-300 focus:border-indigo-500 
                                                 focus:bg-white focus:ring-2 focus:ring-indigo-200 
-                                                text-base outline-none text-gray-700 py-1 px-3 
+                                                text-base outline-none text-gray-300 py-1 px-3 
                                                 leading-8 transition-colors duration-200 ease-in-out" />
                                         </div>
                                     </div>
@@ -75,19 +75,19 @@ const Footer = () => {
                                                 className="w-full bg-transparent  rounded-lg border 
                                                 border-gray-300 focus:border-indigo-500 
                                                 focus:bg-white focus:ring-2 focus:ring-indigo-200 
-                                                text-base outline-none text-gray-700 py-1 px-3 
+                                                text-base outline-none text-gray-300 py-1 px-3 
                                                 leading-8 
                                                 transition-colors duration-200 ease-in-out" />
                                         </div>
                                     </div>
                                     <div className="p-2 pb-10 w-full">
-                                       {/*  <in className="flex mx-auto text-white bg-transparent 
+                                        <button className="flex mx-auto text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
-                                        hover:text-black rounded-xl text-lg" type="submit" >
+                                        hover:text-black rounded-xl text-lg" type="submit"  >
                                             Let's Talk
-                                        </button> */}
-                                        
-                                        <input type='submit' name='lets talk'/>
+                                        </button>
+                                        <span></span>
+                                        {/*  <input type='submit' name='lets talk' /> */}
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +130,7 @@ const Footer = () => {
                             className='flex py-8 '>
                             <input
                                 id='emailID'
-                                className='bg-transparent border-b-2 w-full outline-none'
+                                className='bg-transparent hover:bg-transparent border-b-2 w-full outline-none'
                                 {...register("email", {
                                     required: {
                                         value: true,
@@ -146,12 +146,15 @@ const Footer = () => {
                                     },
                                 })}
                                 placeholder='Enter Email' />
-                               
 
 
-                                    <FiSend className="text-3xl cursor-pointer hover:text-blue-600" />
-                            <input type="submit"/>
-                             
+                            <button type='submit' >
+                                <FiSend className="text-3xl cursor-pointer hover:text-blue-600" />
+                                <span className="py-2 text-sm text-purple-400">
+                                  {/*    {errors?.emailID?.message}  */}
+                                </span>
+                            </button>
+
 
                         </form>
                     </div>

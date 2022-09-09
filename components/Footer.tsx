@@ -151,7 +151,7 @@ const Footer = () => {
                             <button type='submit' >
                                 <FiSend className="text-3xl cursor-pointer hover:text-blue-600" />
                                 <span className="py-2 text-sm text-purple-400">
-                                  {/*    {errors?.emailID?.message}  */}
+                                    {/*    {errors?.emailID?.message}  */}
                                 </span>
                             </button>
 
@@ -165,12 +165,18 @@ const Footer = () => {
                             Stay Connected
                         </span>
                         <div className="flex gap-6 pb-5 m-2">
-                            <FaInstagram className="text-2xl cursor-pointer hover:text-pink-600" />
+                            <Link href='https://www.instagram.com/aerglobal.io/'>
+                                <FaInstagram className="text-2xl cursor-pointer hover:text-pink-600" />
+                            </Link>
                             <Link href=''>
                                 <FiFacebook className="text-2xl cursor-pointer hover:text-blue-600" />
                             </Link>
-                            <FiMail className="text-2xl cursor-pointer hover:text-yellow-600" />
-                            <FiTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
+                            <a href='mailto:contact@aerglobal.io'>
+                                <FiMail className="text-2xl cursor-pointer hover:text-yellow-600" />
+                            </a>
+                            <Link href=''>
+                                <FiTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
+                            </Link>
 
                         </div>
 

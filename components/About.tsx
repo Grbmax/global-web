@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
 
-      <div className='mx-24 my-8'>
+      <div id="about" className='mx-24 my-8 z-50'>
 
         <div className='text-center py-6'>
           <h1 className=' who font-light text-base text-gray-400'>Who We Are</h1>

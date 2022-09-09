@@ -1,17 +1,33 @@
-import React from "react";
+import React, {useRef , useContext, useState, useCallback} from "react";
 import Image from "next/image";
-import ball from '../public/assets/ball.png'
-import gsap from "gsap";
+import { ScrollContext } from "../utils/scroll-observer";
 
 const Masthehad: React.FC = () => {
-  
+    const refContainer = useRef<HTMLDivElement>(null)
+    const { scrollY } = useContext(ScrollContext)
+    let progress = 0
+     
+    const {current: elContainer } = refContainer
+if (elContainer) {
+    progress = Math.min(1, scrollY / elContainer.clientHeight)
+}
+
+
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center -z-50 bg-white">
-        <div id="ball" className="w-24 h-24 rounded-full bg-black absolute">    
-        </div>
+        <div id="home" ref={refContainer}
+         className="min-h-screen flex flex-col items-center justify-center sticky top-0 " 
+         style={{transform:`translateY(-${progress * 20}vh)`}}>
+
+          <div className="pb-10 text-center">
+            <h1 className="pb-4 text-white text-6xl font-bold">ÆR Global</h1>
+            <p className="text-xl">We have made a new start.</p>
+          </div>
+          
+          <div>
+            <img src="assets/atlas.png" width="300" height="300" />
+          </div>
 
         </div>
     )
 }
- 
 export default Masthehad

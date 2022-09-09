@@ -24,7 +24,7 @@ const Footer = () => {
 
     return (
         <>
-            <div className={styles.footerbgimg}>
+            <div id="footer" className={styles.footerbgimg}>
                 <div className="flex flex-wrap">
                     <div className='contacts w-full md:w-full lg:w-1/2'>
                         <div className='flex text-3xl font-extrabold justify-center items-center p-5 '>

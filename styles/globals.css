@@ -9,6 +9,7 @@ body {
   font-family: Playfair s;
   line-height: 1.1;
   letter-spacing: 0em;
+  z-index: -50 ;
   
 }
 

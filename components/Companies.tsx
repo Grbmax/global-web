@@ -33,13 +33,13 @@ const Companies = () => (
                                 challenge.
                             </p><br />
                             <p className='italic font-bold text-base lg:text-2xl flex justify-center lg:justify-start'>That is where we come in!</p>
-                            <div className='py-10 z-40'>
+                           {/*  <div className='py-10 z-40'>
                                 <button className="flex mx-auto text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
                                         hover:text-black rounded-xl text-lg">
                                     Website
                                 </button>
-                            </div>
+                            </div> */}
                         </CompanyRight>
                         {/*     <CompanyBottom>
                             <span>AER MEDIA AER MEDIA AER MEDIA</span>
@@ -50,9 +50,9 @@ const Companies = () => (
             <Tile
                 page={1} renderContent={({ progress }) => (
                     <CompanyContainer>
-                        <CompanyTop>
+                 {/*        <CompanyTop>
                             <span>AER REALTORS</span>
-                        </CompanyTop>
+                        </CompanyTop> */}
                         <CompanyLeft progress={progress}>
                             <Image src="/assets/realtorshero.png"
                                 layout='responsive'
@@ -73,13 +73,13 @@ const Companies = () => (
                                 country in the right direction.</p>
                             <br />
                             <p className='italic font-bold text-base  md:text-2xl flex justify-center lg:justify-start'> Find your piece of Earth!</p>
-                            <div className='py-10 z-40 '>
+                          {/*   <div className='py-10 z-40 '>
                                 <button className="flex mx-auto text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
                                         hover:text-black rounded-xl text-lg">
                                     Website
                                 </button>
-                            </div>
+                            </div> */}
                         </CompanyRight>
                         {/*  <CompanyBottom>
                             <span>AER REALTORS</span>
@@ -90,9 +90,9 @@ const Companies = () => (
             <Tile
                 page={2} renderContent={({ progress }) => (
                     <CompanyContainer>
-                        <CompanyTop>
+                 {/*        <CompanyTop>
                             <span>AER CONSULTANCY</span>
-                        </CompanyTop>
+                        </CompanyTop> */}
                         <CompanyLeft progress={progress}>
                             <Image src="/assets/consultancyhero.png"
                                 layout='responsive'
@@ -112,13 +112,13 @@ const Companies = () => (
                             <br />
                             <p className='flex italic font-bold text-base lg:text-2xl justify-center lg:justify-start'>Let us help you succeed!</p>
 
-                            <div className='py-10 z-40 '>
+                           {/*  <div className='py-10 z-40 '>
                                 <button className="flex mx-auto text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
                                         hover:text-black rounded-xl text-lg">
                                     Website
                                 </button>
-                            </div>
+                            </div> */}
                         </CompanyRight>
                         {/* <CompanyBottom>
                             <span>AER CONSULTANCY</span>

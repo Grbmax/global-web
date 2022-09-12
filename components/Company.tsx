@@ -18,12 +18,13 @@ type Left = {
     progress: number
 }
 
-export const CompanyContainer: React.FC<Props> = ({ top, children }) => (
+export const CompanyContainer: React.FC<Props> = ({ top, children, bottom }) => (
     <div id="companies">
-  
+  <div className="">{top}</div>
         <div className='grid grid-cols lg:grid-cols-2 w-full h-screen py-14 lg:py-28 sm:gap-0 md:gap-2 lg:gap-5'>
             {children}
         </div>
+        <div className="">{bottom}</div>
     </div>
 )
 
@@ -32,13 +33,13 @@ export const CompanyTop: React.FC<Props> = ({ children }) => (
         {children}
     </div>
 )
-/*
+
 export const CompanyBottom: React.FC<Props> = ({ children }) => (
     <div className='flex flex-row items-center w-full py-2 md:text-xl lg:text-[32px] -bottom-2 absolute text-white'>
         {children}
     </div>
 )
- */
+
 export const CompanyRight: React.FC<Right> = ({ children, progress }) => {
     let translateY = Math.max(0, 50 - progress * 3 * 50)
     if (progress > 0.85) translateY = Math.max(-50, -(progress - 0.85) * 2 * 50)

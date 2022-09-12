@@ -1,17 +1,18 @@
 import React from 'react'
 import { Tile, TileContent, TileWrapper } from './Tile'
-import { CompanyTop, CompanyContainer, CompanyLeft, CompanyRight, } from './Company'
+import { CompanyTop, CompanyContainer, CompanyLeft, CompanyRight, CompanyBottom } from './Company'
 import Image from 'next/image'
+import Textscroll from './Textscroll'
 
 const Companies = () => (
     <TileWrapper numOfPages={3}>
-      
+
         <TileContent>
             <Tile
                 page={0}
                 renderContent={({ progress }) => (
                     <CompanyContainer>
-                       {/*  <CompanyTop>
+                        {/*  <CompanyTop>
                             <span>AER MEDIA AER MEDIA AER MEDIA AER MEDIA AER MEDIA AER MEDIA </span>
                         </CompanyTop> */}
                         <CompanyLeft progress={progress}>
@@ -33,7 +34,7 @@ const Companies = () => (
                                 challenge.
                             </p><br />
                             <p className='italic font-bold text-base lg:text-2xl flex justify-center lg:justify-start'>That is where we come in!</p>
-                           {/*  <div className='py-10 z-40'>
+                            {/*  <div className='py-10 z-40'>
                                 <button className="flex mx-auto text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
                                         hover:text-black rounded-xl text-lg">
@@ -41,16 +42,16 @@ const Companies = () => (
                                 </button>
                             </div> */}
                         </CompanyRight>
-                        {/*     <CompanyBottom>
-                            <span>AER MEDIA AER MEDIA AER MEDIA</span>
-                        </CompanyBottom> */}
+                        <CompanyBottom>
+                            <Textscroll />
+                        </CompanyBottom>
                     </CompanyContainer>
                 )}
             ></Tile>
             <Tile
                 page={1} renderContent={({ progress }) => (
                     <CompanyContainer>
-                 {/*        <CompanyTop>
+                        {/*        <CompanyTop>
                             <span>AER REALTORS</span>
                         </CompanyTop> */}
                         <CompanyLeft progress={progress}>
@@ -73,7 +74,7 @@ const Companies = () => (
                                 country in the right direction.</p>
                             <br />
                             <p className='italic font-bold text-base  md:text-2xl flex justify-center lg:justify-start'> Find your piece of Earth!</p>
-                          {/*   <div className='py-10 z-40 '>
+                            {/*   <div className='py-10 z-40 '>
                                 <button className="flex mx-auto text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
                                         hover:text-black rounded-xl text-lg">
@@ -81,16 +82,16 @@ const Companies = () => (
                                 </button>
                             </div> */}
                         </CompanyRight>
-                        {/*  <CompanyBottom>
-                            <span>AER REALTORS</span>
-                        </CompanyBottom> */}
+                        <CompanyBottom>
+                            <Textscroll />
+                        </CompanyBottom>
                     </CompanyContainer>
                 )}
             ></Tile>
             <Tile
                 page={2} renderContent={({ progress }) => (
                     <CompanyContainer>
-                 {/*        <CompanyTop>
+                        {/*        <CompanyTop>
                             <span>AER CONSULTANCY</span>
                         </CompanyTop> */}
                         <CompanyLeft progress={progress}>
@@ -112,17 +113,17 @@ const Companies = () => (
                             <br />
                             <p className='flex italic font-bold text-base lg:text-2xl justify-center lg:justify-start'>Let us help you succeed!</p>
 
-                           {/*  <div className='py-10 z-40 '>
+                   {/*     <div className='py-10 z-40 '>
                                 <button className="flex mx-auto text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
                                         hover:text-black rounded-xl text-lg">
                                     Website
                                 </button>
-                            </div> */}
+                            </div> */} 
                         </CompanyRight>
-                        {/* <CompanyBottom>
-                            <span>AER CONSULTANCY</span>
-                        </CompanyBottom> */}
+                        <CompanyBottom>
+                            <Textscroll />
+                        </CompanyBottom>
                     </CompanyContainer>
                 )}
             ></Tile>

@@ -2,19 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@import url('https://fonts.google.com/specimen/Playfair+Display/tester?query=pla');
 body {
   background: black;
-  color: white; 
-  font-family: Playfair s;
+  color: white;
   line-height: 1.1;
   letter-spacing: 0em;
   z-index: -1;
-   
+  font-family: playfair sa;
+
 }
 
 
+/* text scroll animation start */
+.wrapper-infinitescroll {
+  max-width: 100%;
+  overflow: hidden;
+}
+  .infinitescroll {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: infinitescroll 15s linear infinite;
+  }
+    p {
+      display: inline-block;
+      font-size: 25px;
+    }
+  
 
 
-
-
+@keyframes infinitescroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+/* text scroll animation end */

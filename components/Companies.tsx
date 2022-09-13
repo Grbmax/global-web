@@ -2,7 +2,9 @@ import React from 'react'
 import { Tile, TileContent, TileWrapper } from './Tile'
 import { CompanyTop, CompanyContainer, CompanyLeft, CompanyRight, CompanyBottom } from './Company'
 import Image from 'next/image'
-import Textscroll from './Textscroll'
+import MediaTextScroll from './MediaTextScroll'
+import RealtorTextScroll from './RealtorTextScroll'
+import ConsultancyTextScroll from './ConsultancyTextScroll'
 
 const Companies = () => (
     <TileWrapper numOfPages={3}>
@@ -43,7 +45,7 @@ const Companies = () => (
                             </div> */}
                         </CompanyRight>
                         <CompanyBottom>
-                            <Textscroll />
+                            <MediaTextScroll />
                         </CompanyBottom>
                     </CompanyContainer>
                 )}
@@ -83,7 +85,7 @@ const Companies = () => (
                             </div> */}
                         </CompanyRight>
                         <CompanyBottom>
-                            <Textscroll />
+                            <RealtorTextScroll />
                         </CompanyBottom>
                     </CompanyContainer>
                 )}
@@ -122,7 +124,7 @@ const Companies = () => (
                             </div> */} 
                         </CompanyRight>
                         <CompanyBottom>
-                            <Textscroll />
+                            <ConsultancyTextScroll />
                         </CompanyBottom>
                     </CompanyContainer>
                 )}

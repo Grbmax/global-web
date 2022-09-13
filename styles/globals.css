@@ -41,3 +41,102 @@ body {
   }
 }
 /* text scroll animation end */
+
+
+.loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out 1000ms;
+}
+
+.loading .hide {
+  opacity: 0;
+}
+
+.loading .circle {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #222;
+  animation-name: shadow-grow;
+  animation-duration: 700ms;
+  animation-iteration-count: infinite;
+}
+
+.loading .enlarging-circle {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  background-color: #222;
+  transition: all 1000ms ease-in-out;
+}
+
+.loading.hide .enlarging-circle {
+  height: 100vmax;
+  width: 100vmax;
+}
+
+@keyframes shadow-grow {
+  0% {
+    box-shadow: 0 0 0 #444;
+  }
+  
+  50% {
+    box-shadow: 0 0 50px #444;
+  }
+  
+  100% {
+    box-shadow: 0 0 0 #444;
+  }
+}
+
+
+
+@keyframes falling {
+  0% { 
+    transform: translateY(-150px) scalex(1);
+    animation-timing-function: cubic-bezier(.66,.0,1,.72);
+  }
+  45% { 
+    transform: translateY(-100px) scalex(1);
+  }
+  50% { 
+    transform: translateY(0px) scalex(1.3);
+  }
+  70% {
+    transform: translateY(-40px) scalex(1);
+  }
+  80% { 
+    transform: translateY(-10px) scalex(1);
+  }
+  
+  100% { 
+    transform: translateY(0px) scalex(1);
+  }
+}
+
+.ball{
+  background: #222;
+  border-radius: 50%;
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
+}
+.drop{
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both; 
+  animation-name: falling;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}

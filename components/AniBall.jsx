@@ -1,7 +1,7 @@
 import React from 'react'
 
 const AniBall = () => {
-  window.onload = () => {
+  /* window.onload = () => {
     hideLoading();
   };
 
@@ -17,15 +17,23 @@ const AniBall = () => {
       setTimeout(() => {
         loadingElem.style.display = "none";
       }, 1300);
-    }, 2000);
+    }, 2000); }*/
 
-  }
+  
   return (
     <>
+      {/* <div class="loading">
+        <div class="enlarging-circle"></div>
+        {/* <div class="circle "></div> */}
+      {/*<div class="ball drop flex items-center justify-center text-2xl font-bold">AER</div>
+
+      </div> */}
       <div class="loading">
         <div class="enlarging-circle"></div>
         {/* <div class="circle "></div> */}
-        <div class="ball drop flex items-center justify-center text-2xl font-bold">AER</div>
+        <div class="ball drop flex items-center justify-center text-xs font-bold">
+          <div id='text'>AER</div>
+        </div>
 
       </div>
     </>

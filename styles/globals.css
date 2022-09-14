@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 @import url('https://fonts.google.com/specimen/Playfair+Display/tester?query=pla');
+
 body {
   background: black;
   color: white;
   line-height: 1.1;
   letter-spacing: 0em;
   z-index: -1;
-  font-family:  Playfair Display;
+  font-family: Playfair Display;
 
 }
 
@@ -19,30 +20,34 @@ body {
   max-width: 100%;
   overflow: hidden;
 }
-  .infinitescroll {
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    animation: infinitescroll 15s linear infinite;
-  }
-    p {
-      display: inline-block;
-      font-size: 25px;
-    }
-  
+
+.infinitescroll {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: infinitescroll 15s linear infinite;
+}
+
+p {
+  display: inline-block;
+  font-size: 25px;
+}
+
 
 
 @keyframes infinitescroll {
   0% {
     transform: translate3d(0, 0, 0);
   }
+
   100% {
     transform: translate3d(-50%, 0, 0);
   }
 }
+
 /* text scroll animation end */
 
-
+/* ball animation start*/
 .loading {
   position: fixed;
   display: flex;
@@ -66,7 +71,7 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: #222;
+  background-color: black;
   animation-name: shadow-grow;
   animation-duration: 700ms;
   animation-iteration-count: infinite;
@@ -77,7 +82,7 @@ body {
   height: 0;
   width: 0;
   border-radius: 50%;
-  background-color: #222;
+  background-color: black;
   transition: all 1000ms ease-in-out;
 }
 
@@ -86,23 +91,23 @@ body {
   width: 100vmax;
 }
 
-@keyframes shadow-grow {
+/* @keyframes shadow-grow {
   0% {
     box-shadow: 0 0 0 #444;
   }
-  
+
   50% {
     box-shadow: 0 0 50px #444;
   }
-  
+
   100% {
     box-shadow: 0 0 0 #444;
   }
-}
+} */
 
 
 
-@keyframes falling {
+/* @keyframes falling {
   0% { 
     transform: translateY(-150px) scalex(1);
     animation-timing-function: cubic-bezier(.66,.0,1,.72);
@@ -124,8 +129,46 @@ body {
     transform: translateY(0px) scalex(1);
   }
 }
+ */
 
-.ball{
+@keyframes falling {
+  0% {
+    transform: translateY(-1024px) scalex(1);
+    animation-timing-function: cubic-bezier(.66, .0, 1, .72);
+  }
+
+  20% {
+    transform: translateY(-100px) scalex(1);
+  }
+
+  30% {
+    transform: translateY(0px) scalex(1.3);
+  }
+
+  40% {
+    transform: translateY(-40px) scalex(1);
+  }
+
+  50% {
+    transform: translateY(-10px) scalex(1);
+  }
+
+  60% {
+    transform: translateY(0px) scalex(1);
+  }
+
+  80% {
+    transform: translateY(0px) scale(4);
+    animation-timing-function: cubic-bezier(.66, .0, 1, .72);
+  }
+
+  100% {
+    transform: translateY(0px) scale(450);
+    animation-timing-function: cubic-bezier(.66, .0, 1, .72);
+  }
+}
+
+/* .ball{
   background: #222;
   border-radius: 50%;
   height: 100px;
@@ -139,4 +182,96 @@ body {
   animation-name: falling;
   animation-timing-function: linear;
   animation-iteration-count: 1;
+} */
+
+div#text {
+  animation-name: fade;
 }
+
+.ball {
+  background: black;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+}
+
+.drop {
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: falling;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade {
+
+  0% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+
+}
+/* ball animation end*/
+
+/* vision animation start*/
+
+#container { margin: 0%; }
+
+#circle { position: relative; width: 100%; padding-bottom: 100%; overflow: hidden; }
+
+#circle text { font-family: 'Helvetica Neue', Arial; font-size: 16px; font-weight: bold; color: white; }
+
+#circle svg { position: absolute; left: 0; top: 0; width: 100%; height: 150px;
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+

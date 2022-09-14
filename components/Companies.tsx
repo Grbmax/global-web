@@ -26,7 +26,7 @@ const Companies = () => (
                                 className='rounded-md' />
                         </CompanyLeft>
                         <CompanyRight progress={progress}>
-                            <div className='text-white text-xl lg:text-4xl flex justify-center lg:justify-start'>ÆR MEDIA</div><br />
+                            <div className='text-white text-xl lg:text-4xl flex justify-center lg:justify-start font-ext'>ÆR MEDIA</div><br />
                             <p className='py-2 lg:py-5 text-justify text-base lg:text-2xl'>
                                 ÆR Media is a combination of creative minds and tech-savy digital
                                 stratergists offering a platter of services for Marketing

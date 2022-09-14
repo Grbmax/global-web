@@ -6,6 +6,7 @@ import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import Link from "next/link";
 import Form from './Form';
+import Address from './Address';
 
 
 
@@ -31,52 +32,29 @@ const Footer = () => {
             <div id="footer" className={styles.footerbgimg}>
                 <div className="flex flex-wrap">
                     <div className='contacts w-full md:w-full lg:w-1/2'>
-                        <div className='flex text-3xl font-extrabold justify-center items-center p-5 '>
+                        <div className='flex text-2xl lg:text-3xl font-extrabold justify-center items-center p-5 '>
                             Got An Idea ?
                         </div>
-                        <div className='flex text-xl font-extrabold justify-center items-center pb-5'>
-                            We’d love to hear all about it.
-                        </div>
+                        
                         <Form />
                     </div>
 
                     <div className="address w-full md:w-full lg:w-1/2 p-5  ">
-                        <div className='text-3xl flex flex-col items-center justify-center '>
-                            <div className='font-extrabold' >
-                                ÆR Global
-                            </div>
-                        </div>
-                        <p className="p-5 flex flex-col justify-center items-center" >
-                            <span className='flex-auto text-xl '>
-                                contact@aerglobal.io
-                            </span><br />
-                            <span className='text-xl'>
-                                Contact: 8888341111
-                            </span><br />
-                            <span className='flex-auto text-xl'>
-                                Address:
-                            </span><br />
-                            <span className='flex-auto text-xl'>
-                                905, Dalamal Tower, Nariman Point
-                            </span><br />
-                            <span className='flex-auto text-xl'>
-                                Mumbai
-                            </span>
-                        </p>
+                        <Address />
                     </div>
                 </div>
 
-                <div className="subscribe px-5 mt-10 flex flex-wrap ">
-                    <div className='w-full md:full lg:w-1/2'>
-                        <span className='text-3xl'>
-                            Subscribe
+                <div className="subscribe px-5 mt-10 flex flex-wrap">
+                    <div className='w-full md:full lg:w-1/2 flex flex-col ustify-center items-center'>
+                        <span className='text-2xl lg:text-3xl font-bold'>
+                            Subscribe To Our Newsletter
                         </span><br />
                         <form
                             onSubmit={handleSubmit(onSubmit)}
                             className='flex py-8 '>
                             <input
                                 id='emailID'
-                                className='bg-transparent hover:bg-transparent border-b-2 w-full outline-none'
+                                className='bg-transparent hover:bg-transparent border-b-2 w-80 outline-none'
                                 {...register("email", {
                                     required: {
                                         value: true,
@@ -107,7 +85,7 @@ const Footer = () => {
 
                     <div className="social flex flex-col text-center mt-10 items-center 
                     justify-center w-full md:full lg:w-1/2">
-                        <span className='text-3xl'>
+                        <span className='text-2xl lg:text-3xl font-bold'>
                             Stay Connected
                         </span>
                         <div className="flex gap-6 pb-5 m-2">
@@ -131,7 +109,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='copyright bg-black w-full h-10 flex justify-center items-center'>
-                ©Copyrights ÆR Global
+                ©Copyrights ÆR Media
 
             </div>
         </>

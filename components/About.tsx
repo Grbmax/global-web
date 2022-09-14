@@ -2,7 +2,7 @@ import React from 'react'
 import { BsCamera } from 'react-icons/bs';
 import { BsBuilding } from 'react-icons/bs';
 import { GiMoneyStack} from 'react-icons/gi';
-import VisionText from './VisionText'
+
 
 const About = () => {
   return (
@@ -15,9 +15,9 @@ const About = () => {
           <h1 className='font-bold text-4xl'>ÆR is about your business!</h1>
         </div>
 
-        <div className='py-2 gap-6 mx-32 pr-10 pl-10 '>
+        <div className='py-2 gap-6 mx-10 lg:mx-32 lg:pr-10 lg:pl-10 '>
           <div className='text-justify'>
-            <p className='text-xl py-10 text-left'>
+            <p className='text-xl md:text-2xl lg:text-3xl lg-py-10 text-left'>
               We made a new start. A start that will build beautiful
               relationships,shape millions of ideas: Enable a new way
               to live, learn, work and earn. At AER, we build products
@@ -25,7 +25,7 @@ const About = () => {
             </p>
           </div>
           <div className='text-justify'>
-            <p className='text-xl py-10 w-full text-right'>
+            <p className='text-xl md:text-2xl lg:text-3xl py-10 w-full text-right'>
               We made a new start. A start that will build beautiful
               relationships,shape millions of ideas: Enable a new way
               to live, learn, work and earn. At AER, we build products

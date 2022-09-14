@@ -20,7 +20,7 @@ const Masthehad: React.FC = () => {
 
       <div className="pb-28 lg:pb-10 pt-0 text-center">
         <h1 className=" m-2 pb-5 text-[#aa6c39] text-6xl md:text-7xl lg:text-7xl font-bold">ÆR GLOBAL</h1>
-        <p className="text-xl md:text-2xl lg:text-3xl ">We have made a new start.</p>
+        <p className="text-xl md:text-2xl lg:text-3xl ">We have made a new start</p>
       </div>
 
       <div>

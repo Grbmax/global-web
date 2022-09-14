@@ -9,8 +9,8 @@ const About = () => {
 
       <div id="about" className='bg-black '>
 
-        <div className='text-center py-6'>
-          <h1 className=' who font-light text-base text-gray-400'>Who We Are</h1>
+        <div className='text-center py-6 mt-5'>
+          <h1 className=' who font-light text-xl text-gray-400'>Who We Are</h1>
           <h1 className='font-bold text-4xl'>ÆR is about your business!</h1>
         </div>
 

@@ -1,0 +1,89 @@
+body{
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/939680/Capture.PNG);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+  }
+  #loaderbg{
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  display: table;
+	  z-index: 9999;
+  }
+  #loadsvgcontainer{
+	  margin: 0 auto;
+	  display: table-cell;
+	  vertical-align: middle;
+	  text-align: center;
+  }
+  #logoloadsvg{
+	  max-width: 600px;
+	  width:20px;
+	  overflow: visible;
+	  opacity: 0;
+  }
+  #loadsvgcontainer .cls-04{
+	  stroke: #fff;
+	  stroke-width: 3px;
+	  fill:#009edc;
+  }
+  #loadingtext{
+	  width: 100%;
+	  text-align: center;
+	  color: #009edc;
+	  font-size: 16px;
+	  font-family: Roboto;
+  }
+  #loadingtextcont{
+	  position: fixed;
+	  bottom:20px;
+	  left:0;
+	  width: 100%;
+	  text-align: center;
+  }
+  #pulsercontainer{
+	  position: fixed;
+	  left:0;
+	  top:0;
+	  width: 100%;
+	  height: 100%;
+	  display: table;
+	  background-color: #fff;
+	  z-index: 9998;
+  }
+  #pulsercell{
+	  display: table-cell;
+	  vertical-align: middle;
+	  text-align: center;
+  }
+  .pulse{
+	  width: 100px;
+	  height:100px;
+	  border-radius: 50%;
+	  background: #009edc;
+	  display: inline-block;
+	  transform-origin: 50% 50%;
+  }
+  #transition1{
+	  position: absolute;
+	  top:0;
+	  left:0;
+  }
+  #transition1 svg{
+	  width: 100%;
+	  max-width: 100%;
+	  height:auto;
+	  opacity:1!important;
+  }
+  #transition2{
+	  position: absolute;
+	  top:0;
+	  left:0;
+  }
+  @media only screen and (max-width: 480px){
+	  #logoloadsvg {
+		  max-width: 100%;
+	  }
+  }

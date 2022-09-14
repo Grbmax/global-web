@@ -18,13 +18,13 @@ const Masthehad: React.FC = () => {
       className="min-h-screen -z-40 flex flex-col items-center justify-center sticky top-0 "
       style={{ transform: `translateY(-${progress * 20}vh)` }}>
 
-      <div className="pb-10 text-center">
-        <h1 className="pb-4 text-[#aa6c39] text-6xl font-bold">ÆR Global</h1>
-        <p className="text-xl">We have made a new start.</p>
+      <div className="pb-28 lg:pb-10 pt-0 text-center">
+        <h1 className=" m-2 pb-5 text-[#AB7B4D] text-6xl md:text-7xl lg:text-7xl font-bold">ÆR GLOBAL</h1>
+        <p className="text-xl md:text-2xl lg:text-3xl ">We have made a new start</p>
       </div>
 
       <div>
-        <img src="assets/atlas.png" width="300" height="300" />
+        <img src="assets/atlas0-1.png" width="300" height="300" />
       </div>
 
     </div>

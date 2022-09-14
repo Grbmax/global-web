@@ -5,6 +5,8 @@ import s from '../styles/mission.module.css'
 import { ScrollContext } from '../utils/scroll-observer'
 import MSText from '../public/assets/MissionStatementText.png'
 import MSBG from '../public/assets/missionimg.png'
+import VisionText from './VisionText'
+
 
 
 const opacityForBlock = (sectionProgress: number, blockNo: number) => {
@@ -34,39 +36,45 @@ const MissionStatement = () => {
 
       <div ref={refContainer} className="">
         <div className={`${s.missionBG} bg-black`}>
+        
           <div className='flex flex-col md:flex-col lg:flex-row gap-8 lg:gap-0'>
 
-            <div className="flex w-full py-5 lg:py-10 px-5 lg:px-10 mt-20 justify-center items-center 
+            <div className="flex w-full py-5 lg:py-1 px-5 pl-10 pr-20 lg:px-10  justify-center items-center 
           text-2xl md:text-3xl lg:text-4xl font-semibold">
 
               <div className='leading-[1.15]  '>
                 <span className={`{s.missionText} `}
                   style={{
                     opacity: opacityForBlock(progress, 0)
-                  }}><p >To Create, Craft and Connect 
-                  With influencial Entrepreneurs</p>
+                  }}>To Create, Craft and Connect
+                  With influencial Entrepreneurs
                 </span>
 
                 <span className={`${s.missionText}  inline-block after:content-['_']`}
                   style={{
                     opacity: opacityForBlock(progress, 1)
-                  }}> <p >Who are driving change,
-                  Transform their businesses</p></span>
+                  }}> Who are driving change,
+                  Transform their businesses</span>
 
                 <span className={`${s.missionText}  inline-block `} style={{
                   opacity: opacityForBlock(progress, 2)
-                }}><p > And help make a significant
-                  Impact on the world.</p></span>
+                }}> And help make a significant
+                  Impact on the world.</span>
+
 
               </div>
-
+             
             </div>
+            
               <div className='flex w-full pl-0 pr-14 pb-0 pt-12 lg:p-14 lg:pt-32 lg:pb-0'>
+              
                 <Image
                   src={MSBG}
 
                 />
+                
               </div>
+            
           </div>
 
         </div>

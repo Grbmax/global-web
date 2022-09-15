@@ -98,7 +98,7 @@ const Footer = () => {
                             <a href='mailto:contact@aerglobal.io'>
                                 <FiMail className="text-2xl cursor-pointer hover:text-yellow-600" />
                             </a>
-                            <Link href=''>
+                            <Link href='https://twitter.com/GlobalAera'>
                                 <FiTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
                             </Link>
 

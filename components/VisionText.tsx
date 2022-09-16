@@ -12,7 +12,7 @@ const VisionText = () => {
           width="50px"
           height="50px"
           viewBox="0 0 300 300"
-          enable-background="new 0 0 300 300"
+          enableBackground="new 0 0 300 300"
           xmlSpace="preserve">
           <defs>
             <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />

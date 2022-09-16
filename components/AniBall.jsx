@@ -5,10 +5,10 @@ const AniBall = () => {
   return (
     <>
 
-      <div class="loading">
-        <div class="enlarging-circle"></div>
+      <div className="loading">
+        <div className="enlarging-circle"></div>
         {/* <div class="circle "></div> */}
-        <div class="ball drop flex items-center justify-center text-xs font-bold">
+        <div className="ball drop flex items-center justify-center text-xs font-bold">
           <div id='text'>ÆR</div>
         </div>
 

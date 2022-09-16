@@ -344,12 +344,3 @@ figure.snip0015:hover figcaption::before {
 
 /* image hover end */
 
-.textGrad{
-
-  
-  background: conic-gradient(from 180deg at 48.5% 50%, #3F1F0F -28.12deg, #E3A455 26.25deg, #F6DBA6 88.12deg, #FFEBC4 156.58deg, #F0BE79 191.74deg, #8F653B 213.59deg, #673D22 225.95deg, #BA7F3B 255.19deg, #EEBC70 278.6deg, #3F1F0F 331.88deg, #E3A455 386.25deg), conic-gradient(from 180deg at 48.5% 50%, #FFEAC2 -46.16deg, #4B2A16 130.63deg, #EAB872 133.38deg, #AE824E 204.46deg, #533018 311.43deg, #FFEAC2 313.84deg, #4B2A16 490.63deg);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}

@@ -1,21 +1,3 @@
-/* import Link from 'next/link'
-import React from 'react'
-
-const Navbar = () => {
-  return (
-    <div className="">
-        <nav className="py-8 md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <a href="#home" className="mr-5 hover:text-white">Home</a>
-            <a href="#about" className="mr-5 hover:text-white">About Us</a>
-            <a href="#companies" className="mr-5 hover:text-white">Companies</a>
-            <a href="#footer" className="mr-5 hover:text-white">Get In Touch</a>
-        </nav>
-  </div>
-  )
-}
-
-export default Navbar */
-
 import { useState } from 'react'
 
 function MobileNav({ open, setOpen }) {
@@ -46,7 +28,7 @@ export default function Navbar() {
     return (
         <nav>
             <MobileNav open={open} setOpen={setOpen} />
-            <div className="w-full flex justify-end items-center fixed">
+            <div className="w-full flex justify-end items-center">
                 <div className="group z-50 relative w-6 h-6 mt-10 cursor-pointer flex-col justify-between items-center flex" onClick={() => {
                     setOpen(!open)
                 }}>

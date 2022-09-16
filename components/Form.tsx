@@ -99,7 +99,7 @@ const Form: React.FC = () => {
                     <button type='submit' className='text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
                                         hover:text-black rounded-xl text-lg w-52'  >
-                        Let's Talk
+                        Let&apos;s Talk
                     </button>
                 </div>
             </form >

@@ -32,7 +32,7 @@ const Companies = () => (
                                 stratergists offering a platter of services for Marketing
                                 and Tech Requirements of a company. Working with a
                                 variety of B2B startups and medium to large businesses,
-                                we’ve quickly learned that expanding a business can be quite a
+                                we&apos;ve quickly learned that expanding a business can be quite a
                                 challenge.
                             </p><br />
                             <p className='italic font-bold text-[20px] lg:text-2xl flex justify-center lg:justify-start'>That is where we come in!</p>

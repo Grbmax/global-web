@@ -9,7 +9,7 @@ const AniBall = () => {
         <div class="enlarging-circle"></div>
         {/* <div class="circle "></div> */}
         <div class="ball drop flex items-center justify-center text-xs font-bold">
-          <div id='text'>AER</div>
+          <div id='text'>ÆR</div>
         </div>
 
       </div>

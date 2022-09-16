@@ -41,7 +41,7 @@ const MissionStatement = () => {
           text-[24px] md:text-3xl lg:text-5xl">
 
               <div className='leading-[1.15] '>
-                <span className={`{s.missionText} `}
+                <span className={`${s.missionText} `}
                   style={{
                     opacity: opacityForBlock(progress, 0)
                   }}>To Create, Craft & Connect <br />

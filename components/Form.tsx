@@ -17,7 +17,7 @@ const Form: React.FC = () => {
             if (response.status == 200) {
                 console.log("Success!")
               /*   const notify = () => */
-                    toast.success('Form Submited', {
+                    toast('🌍 Success! We shall get in touch with you soon.', {
                         position: "top-center",
                         autoClose: 2500,
                         hideProgressBar: false,
@@ -28,11 +28,20 @@ const Form: React.FC = () => {
                     });
             } else if (response.status == 201) {
                 console.log("there")
+                toast('🚀 Your appointment is already booked, we should get back in touch soon!', {
+                    position: "top-center",
+                    autoClose: 2500,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
                 // console.log(response.data.message)
             }
         } catch (error) {
             console.log("Something went wrong!")
-            toast.error('Error!', {
+            toast.error('🚀 Error!', {
                 position: "top-center",
                 autoClose: 2500,
                 hideProgressBar: false,
@@ -115,7 +124,7 @@ const Form: React.FC = () => {
                         Let&apos;s Talk
                     </button>
                     <ToastContainer
-                        position="top-center"
+                        position="top-right"
                         autoClose={2500}
                         hideProgressBar={false}
                         newestOnTop={false}

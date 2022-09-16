@@ -1,5 +1,7 @@
+@import url('https://fonts.google.com/specimen/Playfair+Display/tester?query=pla');
 .missionText {
     transition: opacity 0.4s;
+    font-family: 'Playfair Display';
 
 }
 

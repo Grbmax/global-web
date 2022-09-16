@@ -11,12 +11,13 @@ export default async function handler(req: NextApiRequest , res: NextApiResponse
         if (new_results.length !== 0){
             console.log("You are already subscribed!")
             return res.status(201).json({ message: "You are already subscribed!" })
+        } else {
+            const results = await sql_query (
+                `INSERT INTO
+                newsletter ( email ) VALUES ( '${email}' )` , 
+                [])
+            res.status(200).json(req.body)
         }
-        const results = await sql_query (
-            `INSERT INTO
-            newsletter ( email ) VALUES ( '${email}' )` , 
-            [])
-        res.status(200).json(req.body)
     } catch (e) {
         res.status(500).json({ message: (e as Error).message });
         console.log((e as Error).message);

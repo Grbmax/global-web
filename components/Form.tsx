@@ -4,19 +4,6 @@ import { useForm } from 'react-hook-form';
 
 const Form: React.FC = () => {
     const { register, handleSubmit, formState: { errors }, } = useForm();
-    const onSubmit = async (values: any) => {
-        try {
-            const response = await
-                axios.post(`${window.location.origin}/api/data/newsletter`, values)
-            if (response.status == 200) {
-                console.log("Success!")
-            } else if (response.status == 201) {
-                console.log(response.data.message)
-            }
-        } catch (error) {
-            console.log("Something went wrong!")
-        }
-    };
 
     const onAppointment =async (values: any) => {
         try {
@@ -25,7 +12,8 @@ const Form: React.FC = () => {
             if (response.status == 200) {
                 console.log("Success!")
             } else if (response.status == 201) {
-                console.log(response.data.message)
+                console.log("there")
+                // console.log(response.data.message)
             }
         } catch (error) {
             console.log("Something went wrong!")
@@ -37,6 +25,7 @@ const Form: React.FC = () => {
 
                 <input
                     type="text"
+                    id='Name'
                     placeholder='Name'
                     className="w-full bg-transparent rounded-lg border
                          border-gray-300 focus:border-indigo-500
@@ -60,7 +49,7 @@ const Form: React.FC = () => {
                                                 focus:bg-white focus:ring-2 focus:ring-indigo-200 
                                                 text-base outline-none focus:text-gray-900 py-1 px-3 
                                                 leading-8 transition-colors duration-200 ease-in-out"
-                                                {...register("AEmail", {
+                                                {...register("email", {
                                                     required: {
                                                         value: true,
                                                         message: "Valid Email ID is required",

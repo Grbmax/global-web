@@ -11,7 +11,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         if (new_results.length !== 0) {
             console.log(new_results)
             return res.status(201).json({ 
-                message: "Your appointment is already booked, we should get back in touch soon!"})
+                message: ""})
         }  
             const results = await sql_query (
             `INSERT INTO appointment (username , email, contact) VALUES 

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 
 type Props = {
     top?: React.ReactNode
@@ -19,7 +19,7 @@ type Left = {
 
 export const CompanyContainer: React.FC<Props> = ({ top, children, bottom }) => (
     <div id="companies">
-  <div className="">{top}</div>
+        <div className="">{top}</div>
         <div className='grid grid-cols lg:grid-cols-2 w-full h-screen py-14 lg:py-28 sm:gap-0 md:gap-2 lg:gap-5'>
             {children}
         </div>
@@ -70,3 +70,20 @@ export const CompanyLeft: React.FC<Left> = ({ children, progress }) => {
         </div>
     )
 }
+
+
+interface LinkProps {
+    href: string
+    children?: React.ReactNode,
+}
+
+export const CompanyLink: React.FC<LinkProps> = ({ href, children }) => (
+    <Link href={href}>
+        <a
+            target="_blank"
+            rel="noreferrer"
+            className='underline '>
+            {children}
+        </a>
+    </Link>
+)

@@ -1,10 +1,11 @@
 import React from 'react'
 import { Tile, TileContent, TileWrapper } from './Tile'
-import { CompanyTop, CompanyContainer, CompanyLeft, CompanyRight, CompanyBottom } from './Company'
+import { CompanyTop, CompanyContainer, CompanyLeft, CompanyRight, CompanyBottom, CompanyLink } from './Company'
 import Image from 'next/image'
 import MediaTextScroll from './MediaTextScroll'
 import RealtorTextScroll from './RealtorTextScroll'
 import ConsultancyTextScroll from './ConsultancyTextScroll'
+
 
 const Companies = () => (
     <TileWrapper numOfPages={3}>
@@ -18,12 +19,20 @@ const Companies = () => (
                             <span>AER MEDIA AER MEDIA AER MEDIA AER MEDIA AER MEDIA AER MEDIA </span>
                         </CompanyTop> */}
                         <CompanyLeft progress={progress}>
-                            <Image src="/assets/mediahero.png"
-                                layout='responsive'
-                                width={600}
-                                height={600}
-                                alt="Aer Media"
-                                className='rounded-md' />
+                            <figure className="snip0015">
+                                <Image src="/assets/mediahero.png"
+                                    layout='responsive'
+                                    width={600}
+                                    height={600}
+                                    alt="Aer Media"
+                                    className='rounded-md' />
+                                <figcaption>
+                                    <h2 className='text-3xl lg:p-8'>The &nbsp; <span className='italic'> Creative</span> &nbsp; Mind.</h2>
+
+
+
+                                </figcaption>
+                            </figure>
                         </CompanyLeft>
                         <CompanyRight progress={progress}>
                             <div className='text-white text-[28px]  lg:text-[42px] flex justify-center lg:justify-start font-bold'>ÆR <span className='text-[#FF8A00]'>&nbsp; MEDIA</span></div><br />
@@ -36,13 +45,15 @@ const Companies = () => (
                                 challenge.
                             </p><br />
                             <p className='italic font-bold text-[20px] lg:text-2xl flex justify-center lg:justify-start'>That is where we come in!</p>
-                            {/*  <div className='py-10 z-40'>
-                                <button className="flex mx-auto text-white bg-transparent 
+                            {/* <CompanyLink href=''>
+                                <div className='py-10 z-40'>
+                                    <button className="flex mx-auto text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
                                         hover:text-black rounded-xl text-lg">
-                                    Website
-                                </button>
-                            </div> */}
+                                        Website
+                                    </button>
+                                </div>
+                            </CompanyLink> */}
                         </CompanyRight>
                         <CompanyBottom>
                             <MediaTextScroll />
@@ -57,12 +68,20 @@ const Companies = () => (
                             <span>AER REALTORS</span>
                         </CompanyTop> */}
                         <CompanyLeft progress={progress}>
-                            <Image src="/assets/realtorshero.png"
-                                layout='responsive'
-                                width={600}
-                                height={600}
-                                alt="Aer Media"
-                                className='rounded-md' />
+                            <figure className="snip0015">
+                                <Image src="/assets/realtorshero.png"
+                                    layout='responsive'
+                                    width={600}
+                                    height={600}
+                                    alt="Aer Media"
+                                    className='rounded-md' />
+                                <figcaption>
+                                    <h2 className='text-3xl lg:p-8'>The &nbsp; <span className='italic'> Crafting</span> &nbsp; Mind.</h2>
+
+
+
+                                </figcaption>
+                            </figure>
                         </CompanyLeft>
                         <CompanyRight progress={progress}>
                             <div className='text-white text-[28px] lg:text-[42px] flex justify-center lg:justify-start font-bold'>ÆR <span className='text-[#168AAD]'> &nbsp; REALTORS</span></div>
@@ -75,7 +94,7 @@ const Companies = () => (
                                 region; allowing us to take the urban development of the
                                 country in the right direction.</p>
                             <br />
-                            <p className='italic font-extrabold text-[20px]  md:text-2xl flex justify-center lg:justify-start'> Find your piece of Earth!</p>
+                            <p className='italic font-extrabold text-[20px]  md:text-2xl flex justify-center lg:justify-start '> Find your piece of Earth!</p>
                             {/*   <div className='py-10 z-40 '>
                                 <button className="flex mx-auto text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
@@ -97,12 +116,20 @@ const Companies = () => (
                             <span>AER CONSULTANCY</span>
                         </CompanyTop> */}
                         <CompanyLeft progress={progress}>
-                            <Image src="/assets/consultancyhero.png"
-                                layout='responsive'
-                                width={600}
-                                height={600}
-                                alt="Aer Media"
-                                className='rounded-md' />
+                            <figure className="snip0015">
+                                <Image src="/assets/consultancyhero.png"
+                                    layout='responsive'
+                                    width={600}
+                                    height={600}
+                                    alt="Aer Media"
+                                    className='rounded-md' />
+                                <figcaption>
+                                    <h2 className='text-3xl lg:p-8'>The &nbsp; <span className='italic'>Connecting</span> &nbsp; Mind.</h2>
+
+
+
+                                </figcaption>
+                            </figure>
                         </CompanyLeft>
                         <CompanyRight progress={progress}>
                             <div className='text-white text-[28px] sm:text-xl lg:text-[42px] flex justify-center lg:justify-start font-bold'>ÆR <span className='text-[#9747FF]'>&nbsp; CONSULTANCY </span> </div>
@@ -115,7 +142,7 @@ const Companies = () => (
                             <br />
                             <p className='flex italic font-bold text-[20px] lg:text-2xl justify-center lg:justify-start'>Let us help you succeed!</p>
 
-                   {/*  <div className='py-10 z-40 '>
+                            {/*  <div className='py-10 z-40 '>
                                 <button className="flex mx-auto text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
                                         hover:text-black rounded-xl text-lg">
@@ -129,8 +156,8 @@ const Companies = () => (
                     </CompanyContainer>
                 )}
             ></Tile>
-        </TileContent>
-    </TileWrapper>
+        </TileContent >
+    </TileWrapper >
 )
 
 export default Companies

@@ -7,7 +7,8 @@ import { useForm } from 'react-hook-form';
 import Link from "next/link";
 import Form from './Form';
 import Address from './Address';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -19,11 +20,38 @@ const Footer = () => {
                 axios.post(`${window.location.origin}/api/data/newsletter`, values)
             if (response.status == 200) {
                 console.log("Success!")
+                toast('🌍 Sucess! Welcome to the ÆR Family.', {
+                    position: "top-center",
+                    autoClose: 2500,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
             } else if (response.status == 201) {
                 console.log(response.data.message)
+                toast('🚀 You are already subscribed to our newsletters.', {
+                    position: "top-center",
+                    autoClose: 2500,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
             }
         } catch (error) {
             console.log("Something went wrong!")
+            toast.error('🚀 Error!', {
+                position: "top-center",
+                autoClose: 2500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
         }
     };
 
@@ -78,7 +106,18 @@ const Footer = () => {
                                     {/*    {errors?.emailID?.message}  */}
                                 </span>
                             </button>
-
+                            <ToastContainer
+                        position="top-right"
+                        autoClose={2500}
+                        hideProgressBar={false}
+                        newestOnTop={false}
+                        closeOnClick
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover 
+                       
+                         />
 
                         </form>
                     </div>

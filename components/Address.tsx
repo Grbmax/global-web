@@ -14,7 +14,7 @@ const Address = () => {
                     <span className='font-bold'>Email:</span> contact@aerglobal.io
                     </li>
                     <li className='text-xl'>
-                       <span className='font-bold'>Contact:</span> 8888341111
+                       <span className='font-bold'>Contact:</span> +91 8888341111
                     </li>
                     <li className='flex-auto text-xl font-bold'>
                         Address :

@@ -45,19 +45,19 @@ const MissionStatement = () => {
                   style={{
                     opacity: opacityForBlock(progress, 0)
                   }}>To Create, Craft & Connect <br />
-                  With influencial Entrepreneurs
+                  with influencial entrepreneurs
                 </span>
 
                 <span className={`${s.missionText}  inline-block after:content-['_']`}
                   style={{
                     opacity: opacityForBlock(progress, 1)
                   }}> Who are driving change,<br />
-                  Transform their businesses</span>
+                  transform their businesses</span>
 
                 <span className={`${s.missionText}  inline-block `} style={{
                   opacity: opacityForBlock(progress, 2)
                 }}> And help make a significant<br />
-                  Impact on the world.</span>
+                  impact on the world.</span>
 
 
               </div>

@@ -86,10 +86,10 @@ const Companies = () => (
                         <CompanyRight progress={progress}>
                             <div className='text-white text-[28px] lg:text-[42px] flex justify-center lg:justify-start font-bold'>ÆR <span className='text-[#b7da46]'> &nbsp; REALTORS</span></div>
                             <p className='py-5 lg:py-5 text-justify text-base lg:text-2xl'>
-                                ÆR Realtors is a brokerage,leasing and
-                                Real estate investment consultancy firm run by a team
+                                ÆR Realtors is a brokerage, leasing ,and
+                                real-estate investment consultancy firm run by a team
                                 of experts providing tailor-made solutions for clients for
-                                property investments. We have managed to partner with the
+                                property investments. We have partnered with the
                                 biggest and most profitable project developers in the
                                 region; allowing us to take the urban development of the
                                 country in the right direction.</p>
@@ -137,7 +137,7 @@ const Companies = () => (
                                 ÆR consultancy commits to accelerate innovations that have a positive
                                 impact on the world. We are the driving force for your innovations
                                 through our offering of strategic consulting services,
-                                funding consultancy, Audits, Project management and More,
+                                funding consultancy, audits, project management and more,
                                 which deliver impactful expertise for all business development stages.</p>
                             <br />
                             <p className='flex italic font-bold text-[20px] lg:text-2xl justify-center lg:justify-start'>Let us help you succeed!</p>

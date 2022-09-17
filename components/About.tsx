@@ -22,7 +22,7 @@ const About = () => {
             <p className='text-xl md:text-2xl lg:text-[30px] lg-py-10 text-justify'>
             We made a new start. A start that will build beautiful relationships, shape millions of ideas: <br />
             Enable a new way to live, learn, work and earn. 
-            At ÆR, we build product and services of the future to make your business dreams a reality.
+            At ÆR, we build products and services of the future to make your business dreams a reality.
             </p>
           </div>
           <div className='text-justify'>

@@ -2,19 +2,19 @@ import { useState } from 'react'
 
 function MobileNav({ open, setOpen }) {
     return (
-        <div className={`absolute top-0 left-0 h-screen w-screen bg-black text-white bg-opacity-95 transform ${open ? "-translate-y-0" : "-translate-y-full"} transition-transform duration-300 ease-in-out filter  `}>
+        <div className={`absolute top-0 left-0 h-screen w-full bg-black text-white bg-opacity-95 transform ${open ? "-translate-y-0" : "-translate-y-full"} transition-transform duration-300 ease-in-out filter  `}>
 
             <div className="flex flex-col justify-center items-center mt-28">
-                <a className="text-2xl font-bold hover:text-[#cd8d59] hover:underline my-4" href="#home" >
+                <a className="text-2xl lg:text-3xl font-bold hover:text-[#cdc159] hover:underline my-4" href="#home" >
                     Home
                 </a>
-                <a className="text-2xl font-bold my-4 hover:text-[#cd8d59] hover:underline" href="#about" >
+                <a className="text-2xl lg:text-3xl font-bold my-4 hover:text-[#cd8d59] hover:underline " href="#about" >
                     About Us
                 </a>
-                <a className="text-2xl font-bold my-4 hover:text-[#cd8d59] hover:underline" href="#companies" >
+                <a className="text-2xl lg:text-3xl font-bold my-4 hover:text-[#cd8d59] hover:underline " href="#companies" >
                     Companies
                 </a>
-                <a className="text-2xl font-bold my-4 hover:text-[#cd8d59] hover:underline" href="#footer" >
+                <a className="text-2xl lg:text-3xl font-bold my-4 hover:text-[#cd8d59] hover:underline " href="#footer" >
                     Get In Touch
                 </a>
             </div>

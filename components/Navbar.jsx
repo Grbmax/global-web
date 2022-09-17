@@ -5,7 +5,7 @@ function MobileNav({ open, setOpen }) {
         <div className={`absolute top-0 left-0 h-screen w-full bg-black text-white bg-opacity-95 transform ${open ? "-translate-y-0" : "-translate-y-full"} transition-transform duration-300 ease-in-out filter  `}>
 
             <div className="flex flex-col justify-center items-center mt-28">
-                <a className="text-2xl lg:text-3xl font-bold hover:text-[#cdc159] hover:underline my-4" href="#home" >
+                <a className="text-2xl lg:text-3xl font-bold hover:text-[#cd8d59] hover:underline my-4" href="#home" >
                     Home
                 </a>
                 <a className="text-2xl lg:text-3xl font-bold my-4 hover:text-[#cd8d59] hover:underline " href="#about" >
@@ -28,8 +28,8 @@ export default function Navbar() {
     return (
         <nav>
             <MobileNav open={open} setOpen={setOpen} />
-            <div className="w-28 flex p-5 pl-10 pt-10 items-center">
-                <div className="group z-50 relative w-6 h-6  cursor-pointer flex-col justify-between items-center flex" onClick={() => {
+            <div className="w-28 flex p-5 pl-10 pt-6 items-center">
+                <div className="group z-40 relative w-6 h-5  cursor-pointer flex-col justify-between items-center flex" onClick={() => {
                     setOpen(!open)
                 }}>
                     {/* hamburger button */}

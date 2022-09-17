@@ -27,7 +27,7 @@ const Companies = () => (
                                     alt="Aer Media"
                                     className='rounded-md' />
                                 <figcaption>
-                                    <h2 className='text-3xl lg:p-8'>The &nbsp; <span className='italic'> Creative</span> &nbsp; Mind.</h2>
+                                    <h2 className='text-2xl lg:text-3xl lg:p-8'>The &nbsp; <span className='italic font-extrabold'> Creative</span> &nbsp; Mind.</h2>
 
 
 
@@ -76,7 +76,7 @@ const Companies = () => (
                                     alt="Aer Media"
                                     className='rounded-md' />
                                 <figcaption>
-                                    <h2 className='text-3xl lg:p-8'>The &nbsp; <span className='italic'> Crafting</span> &nbsp; Mind.</h2>
+                                    <h2 className='text-2xl lg:text-3xl lg:p-8'>The &nbsp; <span className='italic font-extrabold'> Crafting</span> &nbsp; Mind.</h2>
 
 
 
@@ -84,7 +84,7 @@ const Companies = () => (
                             </figure>
                         </CompanyLeft>
                         <CompanyRight progress={progress}>
-                            <div className='text-white text-[28px] lg:text-[42px] flex justify-center lg:justify-start font-bold'>ÆR <span className='text-[#168AAD]'> &nbsp; REALTORS</span></div>
+                            <div className='text-white text-[28px] lg:text-[42px] flex justify-center lg:justify-start font-bold'>ÆR <span className='text-[#b7da46]'> &nbsp; REALTORS</span></div>
                             <p className='py-5 lg:py-5 text-justify text-base lg:text-2xl'>
                                 ÆR Realtors is a brokerage,leasing and
                                 Real estate investment consultancy firm run by a team
@@ -124,7 +124,7 @@ const Companies = () => (
                                     alt="Aer Media"
                                     className='rounded-md' />
                                 <figcaption>
-                                    <h2 className='text-3xl lg:p-8'>The &nbsp; <span className='italic'>Connecting</span> &nbsp; Mind.</h2>
+                                    <h2 className='text-2xl lg:text-3xl lg:p-8'>The &nbsp; <span className='italic font-extrabold'>Connecting</span> &nbsp; Mind.</h2>
 
 
 
@@ -138,7 +138,7 @@ const Companies = () => (
                                 impact on the world. We are the driving force for your innovations
                                 through our offering of strategic consulting services,
                                 funding consultancy, Audits, Project management and More,
-                                which deliver impactful expertise for all development stages.</p>
+                                which deliver impactful expertise for all business development stages.</p>
                             <br />
                             <p className='flex italic font-bold text-[20px] lg:text-2xl justify-center lg:justify-start'>Let us help you succeed!</p>
 

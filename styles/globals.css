@@ -29,11 +29,11 @@ body {
   animation: infinitescroll 15s linear infinite;
 }
 
-p {
+/* p {
   display: inline-block;
   font-size: 25px;
 }
-
+ */
 
 
 @keyframes infinitescroll {

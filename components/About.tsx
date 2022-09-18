@@ -18,14 +18,14 @@ const About = () => {
         </div>
 
         <div className='py-2 gap-6 mx-10 lg:mx-32 lg:pr-10 lg:pl-10 '>
-          <div className='text-justify'>
-            <p className='text-xl md:text-2xl lg:text-[30px] lg-py-10 text-justify'>
+          <div className=''>
+            <p className='text-xl md:text-2xl lg:text-[28px] lg-py-10 text-justify'>
             We made a new start. A start that will build beautiful relationships, shape millions of ideas: <br />
             Enable a new way to live, learn, work and earn. 
             At ÆR, we build product and services of the future to make your business dreams a reality.
             </p>
           </div>
-          <div className='text-justify'>
+          <div className=''>
             <p className='text-xl md:text-2xl lg:text-[28px] py-10 w-full  text-justify'>
             ÆR is a conglomerate branched out to enterprises of tech, 
             real estate, marketing, media, finances and consultancy. 

@@ -51,19 +51,20 @@ const Footer = () => {
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
-                });
+            });
         }
     };
 
     return (
         <>
             <div id="footer" className={styles.footerbgimg}>
+                
                 <div className="flex flex-wrap">
                     <div className='contacts w-full md:w-full lg:w-1/2'>
                         <div className='flex text-2xl lg:text-3xl font-extrabold justify-center items-center p-5 '>
                             Got An Idea ?
                         </div>
-                        
+
                         <Form />
                     </div>
 
@@ -72,7 +73,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="subscribe px-5 mt-10 flex flex-wrap">
+                <div className="subscribe px-5 lg:px-0 mt-10 flex flex-wrap">
                     <div className='w-full md:full lg:w-1/2 flex flex-col ustify-center items-center'>
                         <span className='text-2xl lg:text-3xl font-bold'>
                             Subscribe To Our Newsletter
@@ -107,38 +108,46 @@ const Footer = () => {
                                 </span>
                             </button>
                             <ToastContainer
-                        position="top-right"
-                        autoClose={2500}
-                        hideProgressBar={false}
-                        newestOnTop={false}
-                        closeOnClick
-                        rtl={false}
-                        pauseOnFocusLoss
-                        draggable
-                        pauseOnHover 
-                       
-                         />
+                                position="top-right"
+                                autoClose={2500}
+                                hideProgressBar={false}
+                                newestOnTop={false}
+                                closeOnClick
+                                rtl={false}
+                                pauseOnFocusLoss
+                                draggable
+                                pauseOnHover
+
+                            />
 
                         </form>
                     </div>
 
-                    <div className="social flex flex-col text-center mt-10 items-center 
-                    justify-center w-full md:full lg:w-1/2">
-                        <span className='text-2xl lg:text-3xl font-bold'>
+                    <div className="social flex flex-col text-center mt-10 lg:mt-0 items-center 
+                    justify-center w-full md:w-full lg:w-1/2">
+                        <span className='text-2xl lg:text-3xl font-bold pb-5 '>
                             Stay Connected
                         </span>
                         <div className="flex gap-6 pb-5 m-2">
                             <Link href='https://www.instagram.com/aerglobal.io/'>
-                                <FaInstagram className="text-2xl cursor-pointer hover:text-pink-600" />
+                                <div className=" outline outline-offset-4 outline-2 rounded-full ">
+                                    <FaInstagram className="text-2xl cursor-pointer hover:text-pink-600 " />
+                                </div>
                             </Link>
                             <Link href=''>
-                                <FiFacebook className="text-2xl cursor-pointer hover:text-blue-600" />
+                                <div className=" outline outline-offset-4 outline-2 rounded-full">
+                                    <FiFacebook className="text-2xl cursor-pointer hover:text-blue-600" />
+                                </div>
                             </Link>
                             <a href='mailto:contact@aerglobal.io'>
-                                <FiMail className="text-2xl cursor-pointer hover:text-yellow-600" />
+                                <div className=" outline outline-offset-4 outline-2 rounded-full">
+                                    <FiMail className="text-2xl cursor-pointer hover:text-yellow-600" />
+                                </div>
                             </a>
                             <Link href='https://twitter.com/GlobalAera'>
-                                <FiTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
+                                <div className=" outline outline-offset-4 outline-2 rounded-full">
+                                    <FiTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
+                                </div>
                             </Link>
 
                         </div>
@@ -147,6 +156,9 @@ const Footer = () => {
 
                 </div>
             </div>
+            
+            <hr />
+
             <div className='copyright bg-black w-full h-10 flex justify-center items-center'>
                 ©Copyrights ÆR Media
 

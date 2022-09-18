@@ -130,23 +130,23 @@ const Footer = () => {
                         </span>
                         <div className="flex gap-6 pb-5 m-2">
                             <Link href='https://www.instagram.com/aerglobal.io/'>
-                                <div className=" outline outline-offset-4 outline-2 rounded-full ">
+                                <div className=" outline outline-offset-4 outline-2 rounded-full hover:outline-pink-600 ">
                                     <FaInstagram className="text-2xl cursor-pointer hover:text-pink-600 " />
                                 </div>
                             </Link>
                             <Link href=''>
-                                <div className=" outline outline-offset-4 outline-2 rounded-full">
-                                    <FiFacebook className="text-2xl cursor-pointer hover:text-blue-600" />
+                                <div className=" outline outline-offset-4 outline-2 rounded-full hover:outline-blue-500">
+                                    <FiFacebook className="text-2xl cursor-pointer hover:text-blue-500" />
                                 </div>
                             </Link>
                             <a href='mailto:contact@aerglobal.io'>
-                                <div className=" outline outline-offset-4 outline-2 rounded-full">
+                                <div className=" outline outline-offset-4 outline-2 rounded-full hover:outline-yellow-600">
                                     <FiMail className="text-2xl cursor-pointer hover:text-yellow-600" />
                                 </div>
                             </a>
                             <Link href='https://twitter.com/GlobalAera'>
-                                <div className=" outline outline-offset-4 outline-2 rounded-full">
-                                    <FiTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
+                                <div className=" outline outline-offset-4 outline-2 rounded-full hover:outline-blue-300">
+                                    <FiTwitter className="text-2xl cursor-pointer hover:text-blue-300" />
                                 </div>
                             </Link>
 

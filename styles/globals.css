@@ -74,7 +74,7 @@ body {
   border-radius: 50%;
   background-color: black;
   animation-name: shadow-grow;
-  animation-duration: 700ms;
+  animation-duration: 500ms;
   animation-iteration-count: infinite;
 }
 
@@ -84,7 +84,7 @@ body {
   width: 0;
   border-radius: 50%;
   background-color: black;
-  transition: all 1000ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .loading.hide .enlarging-circle {
@@ -158,8 +158,8 @@ div#text {
 }
 
 .drop {
-  animation-delay: 2s;
-  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-duration: 4s;
   animation-fill-mode: both;
   animation-name: falling;
   animation-timing-function: linear;

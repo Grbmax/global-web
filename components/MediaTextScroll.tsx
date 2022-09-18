@@ -6,7 +6,7 @@ const MediaTextScroll = () => {
         <>
             <div className="wrapper-infinitescroll">
                 <div className="infinitescroll">
-                    <p>
+                    <p className=' '>
                         <span className=' text-5xl font-extrabold'> . </span>
                         <span className='text-[#FF8A00]'> Photographers </span>
                         <span className=' text-5xl font-extrabold'> . </span>

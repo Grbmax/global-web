@@ -158,8 +158,8 @@ div#text {
 }
 
 .drop {
-  animation-delay: 2s;
-  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-duration: 4s;
   animation-fill-mode: both;
   animation-name: falling;
   animation-timing-function: linear;

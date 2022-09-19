@@ -35,8 +35,12 @@ const Companies = () => (
                             </figure>
                         </CompanyLeft>
                         <CompanyRight progress={progress}>
-                            <div className='text-white text-[28px]  lg:text-[42px] flex justify-center lg:justify-start font-bold'>ÆR <span className='text-[#FF8A00]'>&nbsp; MEDIA</span></div><br />
-                            <p className='py-2 lg:py-5 text-justify text-base lg:text-2xl'>
+                            <div className='text-white text-[28px] md:text-[34px] lg:text-[42px] flex justify-center lg:justify-start font-bold'>
+                                ÆR
+                                <div className='text-[#FF8A00]'>&nbsp; MEDIA</div>
+                            </div>
+                            <br />
+                            <p className='py-2 lg:py-5 text-justify text-base md:text-[22px] lg:text-2xl'>
                                 ÆR Media is a combination of creative minds and tech-savy digital
                                 stratergists offering a platter of services for Marketing
                                 and Tech Requirements of a company. Working with a
@@ -44,7 +48,7 @@ const Companies = () => (
                                 we&apos;ve quickly learned that expanding a business can be quite a
                                 challenge.
                             </p><br />
-                            <p className='italic font-bold text-[20px] lg:text-2xl flex justify-center lg:justify-start'>That is where we come in!</p>
+                            <p className='italic font-bold text-[20px] md:text-[22px]  lg:text-2xl flex justify-center lg:justify-start'>That is where we come in!</p>
                             {/* <CompanyLink href=''>
                                 <div className='py-10 z-40'>
                                     <button className="flex mx-auto text-white bg-transparent 
@@ -84,17 +88,17 @@ const Companies = () => (
                             </figure>
                         </CompanyLeft>
                         <CompanyRight progress={progress}>
-                            <div className='text-white text-[28px] lg:text-[42px] flex justify-center lg:justify-start font-bold'>ÆR <span className='text-[#b7da46]'> &nbsp; REALTORS</span></div>
-                            <p className='py-5 lg:py-5 text-justify text-base lg:text-2xl'>
-                                ÆR Realtors is a brokerage, leasing ,and
-                                real-estate investment consultancy firm run by a team
+                            <div className='text-white text-[28px] md:text-[34px] lg:text-[42px] flex justify-center lg:justify-start font-bold'>ÆR <span className='text-[#b7da46]'> &nbsp; REALTORS</span></div>
+                            <p className='py-5 lg:py-5 text-justify md:text-[22px] text-base lg:text-2xl'>
+                                ÆR Realtors is a brokerage,leasing and
+                                Real estate investment consultancy firm run by a team
                                 of experts providing tailor-made solutions for clients for
-                                property investments. We have partnered with the
+                                property investments. We have managed to partner with the
                                 biggest and most profitable project developers in the
                                 region; allowing us to take the urban development of the
                                 country in the right direction.</p>
                             <br />
-                            <p className='italic font-extrabold text-[20px]  md:text-2xl flex justify-center lg:justify-start '> Find your piece of Earth!</p>
+                            <p className='italic font-extrabold text-[20px]  md:text-[22px]  lg:text-2xl flex justify-center lg:justify-start '> Find your piece of Earth!</p>
                             {/*   <div className='py-10 z-40 '>
                                 <button className="flex mx-auto text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
@@ -132,15 +136,17 @@ const Companies = () => (
                             </figure>
                         </CompanyLeft>
                         <CompanyRight progress={progress}>
-                            <div className='text-white text-[28px] sm:text-xl lg:text-[42px] flex justify-center lg:justify-start font-bold'>ÆR <span className='text-[#9747FF]'>&nbsp; CONSULTANCY </span> </div>
-                            <p className='py-5 lg:py-5 text-justify text-base lg:text-2xl'>
+                            <div className='text-white text-[28px] sm:text-xl md:text-[34px] lg:text-[42px] flex justify-center lg:justify-start font-bold'>
+                                ÆR <span className='text-[#9747FF]'>&nbsp; CONSULTANCY </span>
+                                 </div>
+                            <p className='py-5 lg:py-5 text-justify md:text-[22px] text-base lg:text-2xl'>
                                 ÆR consultancy commits to accelerate innovations that have a positive
                                 impact on the world. We are the driving force for your innovations
                                 through our offering of strategic consulting services,
-                                funding consultancy, audits, project management and more,
+                                funding consultancy, Audits, Project management and More,
                                 which deliver impactful expertise for all business development stages.</p>
                             <br />
-                            <p className='flex italic font-bold text-[20px] lg:text-2xl justify-center lg:justify-start'>Let us help you succeed!</p>
+                            <p className='flex italic font-bold text-[20px] md:text-[22px] lg:text-2xl justify-center lg:justify-start'>Let us help you succeed!</p>
 
                             {/*  <div className='py-10 z-40 '>
                                 <button className="flex mx-auto text-white bg-transparent 

@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/globe.png" />
         <title>ÆR Global</title>
       </Head>
-      
+      <Navbar />
       <Masthehad />
       <About />
       <Companies />

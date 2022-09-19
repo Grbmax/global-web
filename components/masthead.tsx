@@ -16,7 +16,7 @@ const Masthehad: React.FC = () => {
 
   return (
     <>
-      <Navbar />
+      
       <div id="home" ref={refContainer}
         className="min-h-screen -z-40 flex flex-col items-center justify-center sticky top-0 "
         style={{ transform: `translateY(-${progress * 20}vh)` }}>

@@ -17,7 +17,7 @@ const MissionStatement = () => {
   const { scrollY } = useContext(ScrollContext)
   const refContainer = useRef<HTMLDivElement>(null)
 
-  const numOfPages = 4
+  const numOfPages = 3
   let progress = 0
 
   const { current: elContainer } = refContainer
@@ -34,11 +34,11 @@ const MissionStatement = () => {
 
       <div ref={refContainer} className="">
         <div className={`${s.missionBG} bg-black`}>
-        
-          <div className='flex flex-col md:flex-col lg:flex-row gap-8 lg:gap-0'>
 
-            <div className="flex w-full py-5 lg:py-14 px-5 pl-10 pr-20 lg:px-10
-          text-[24px] md:text-3xl lg:text-5xl">
+          <div className='flex flex-col lg:flex-row gap-8 md:gap-0 lg:gap-0 pt-28 md:pt-0 lg:pt-28 '>
+
+            <div className="flex w-full py-5 lg:py-14 px-5 pl-10 pr-20 lg:px-5 lg:pt-52
+             text-[30px] md:text-5xl lg:text-5xl">
 
               <div className='leading-[1.15] '>
                 <span className={`${s.missionText} `}
@@ -46,13 +46,13 @@ const MissionStatement = () => {
                     opacity: opacityForBlock(progress, 0)
                   }}>To Create, Craft & Connect <br />
                   with Influencial Entrepreneurs
-                </span>
+                </span><br />
 
                 <span className={`${s.missionText}  inline-block after:content-['_']`}
                   style={{
                     opacity: opacityForBlock(progress, 1)
                   }}> Who drive change, help<br />
-                  transform their businesses</span>
+                  transform their businesses</span><br />
 
                 <span className={`${s.missionText}  inline-block `} style={{
                   opacity: opacityForBlock(progress, 2)
@@ -61,18 +61,19 @@ const MissionStatement = () => {
 
 
               </div>
-             
-            </div>
-            
-              <div className='flex w-full pl-0 pr-14 pb-0 pt-12 lg:p-14 lg:pt-32 lg:pb-0'>
-              
-                <Image
-                  src={MSBG}
 
-                />
+            </div>
+
+            <div className=' w-full  pl-0 pr-14 pb-0 pt-12 md:pt-0 lg:p-14 lg:pt-32 lg:pb-0'>
+
+              <Image
+                src={MSBG}
                 
-              </div>
-            
+            className=''
+              />
+
+            </div>
+
           </div>
 
         </div>

@@ -60,7 +60,7 @@ const Footer = () => {
             <div id="footer" className={styles.footerbgimg}>
                 
                 <div className="flex flex-wrap">
-                    <div className='contacts w-full md:w-full lg:w-1/2'>
+                    <div className='contacts w-full md:w-1/2 lg:w-1/2'>
                         <div className='flex text-2xl lg:text-3xl font-extrabold justify-center items-center p-5 '>
                             Got An Idea ?
                         </div>
@@ -68,13 +68,13 @@ const Footer = () => {
                         <Form />
                     </div>
 
-                    <div className="address w-full md:w-full lg:w-1/2 p-5  ">
+                    <div className="address w-full md:w-1/2 lg:w-1/2 p-5  ">
                         <Address />
                     </div>
                 </div>
 
                 <div className="subscribe px-5 lg:px-0 mt-10 flex flex-wrap">
-                    <div className='w-full md:full lg:w-1/2 flex flex-col ustify-center items-center'>
+                    <div className='w-full md:w-1/2 lg:w-1/2 flex flex-col ustify-center items-center'>
                         <span className='text-2xl lg:text-3xl font-bold'>
                             Subscribe To Our Newsletter
                         </span><br />
@@ -123,8 +123,8 @@ const Footer = () => {
                         </form>
                     </div>
 
-                    <div className="social flex flex-col text-center mt-10 lg:mt-0 items-center 
-                    justify-center w-full md:w-full lg:w-1/2">
+                    <div className="social flex flex-col text-center mt-10 md:mt-0 lg:mt-0 items-center 
+                    justify-center w-full md:w-1/2 lg:w-1/2">
                         <span className='text-2xl lg:text-3xl font-bold pb-5 '>
                             Stay Connected
                         </span>

@@ -2,17 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.google.com/specimen/Playfair+Display/tester?query=pla');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 body {
   background: black;
   color: white;
   line-height: 1.1;
   letter-spacing: 0em;
   z-index: -1;
-  font-family: 'Playfair Display';
-
-
+  font-family: 'Playfair Display', serif;
+  
+  
 }
 
 
@@ -344,3 +343,36 @@ figure.snip0015:hover figcaption::before {
 
 /* image hover end */
 
+
+/* underline hover left to right start   use this in className: hover-underline-animation*/
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+ 
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* underline hover left to right start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+.numtext 
+{
+font-family: 'Poppins', sans-serif;
+}

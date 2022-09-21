@@ -22,6 +22,8 @@ const Home: NextPage = () => {
       <Companies />
       <MissionStatement />
       <Footer />
+
+
     </div>
   )
 }

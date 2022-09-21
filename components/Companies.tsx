@@ -77,7 +77,7 @@ const Companies = () => (
                                     layout='responsive'
                                     width={600}
                                     height={600}
-                                    alt="Aer Media"
+                                    alt="Aer Realtor"
                                     className='rounded-md' />
                                 <figcaption>
                                     <h2 className='text-2xl lg:text-3xl lg:p-8'>The &nbsp; <span className='italic font-extrabold'> Crafting</span> &nbsp; Mind.</h2>
@@ -125,7 +125,7 @@ const Companies = () => (
                                     layout='responsive'
                                     width={600}
                                     height={600}
-                                    alt="Aer Media"
+                                    alt="Aer Consultancy"
                                     className='rounded-md' />
                                 <figcaption>
                                     <h2 className='text-2xl lg:text-3xl lg:p-8'>The &nbsp; <span className='italic font-extrabold'>Connecting</span> &nbsp; Mind.</h2>

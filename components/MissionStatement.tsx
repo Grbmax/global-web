@@ -3,8 +3,7 @@ import React, { useRef, useContext } from 'react'
 import s from '../styles/mission.module.css'
 import { ScrollContext } from '../utils/scroll-observer'
 import MSBG from '../public/assets/missionimg.png'
-
-
+import VisionText from './VisionText'
 
 
 const opacityForBlock = (sectionProgress: number, blockNo: number) => {
@@ -33,18 +32,20 @@ const MissionStatement = () => {
     <>
 
       <div ref={refContainer} className="">
-        <div className={`${s.missionBG} bg-black`}>
 
-          <div className='flex flex-col lg:flex-row gap-8 md:gap-0 lg:gap-0 pt-28 md:pt-0 lg:pt-28 '>
+        <div className="bg-black pt-10" >
+          <div className="h-20 w-32 md:h-28 md:w-36 lg:h-32 lg:w-48">
+            <VisionText />
+          </div>
+          <div className='flex flex-col lg:flex-row pt-16 md:pt-8 lg:pt-10 '>
 
-            <div className="flex w-full py-5 lg:py-14 px-5 pl-10 pr-20 lg:px-5 lg:pt-52
-             text-[30px] md:text-5xl lg:text-5xl">
+            <div className="flex w-full pl-5 text-[30px] md:text-5xl lg:text-6xl  ">
 
-              <div className='leading-[1.15] '>
+              <div className=' '>
                 <span className={`${s.missionText} `}
                   style={{
                     opacity: opacityForBlock(progress, 0)
-                  }}>To Create, Craft & Connect <br />
+                  }}>To Create, Craft &amp; Connect <br />
                   with Influencial Entrepreneurs
                 </span><br />
 
@@ -64,12 +65,13 @@ const MissionStatement = () => {
 
             </div>
 
-            <div className=' w-full  pl-0 pr-14 pb-0 pt-12 md:pt-0 lg:p-14 lg:pt-32 lg:pb-0'>
+            <div className=' w-full  opacity-[35%] '>
 
               <Image
                 src={MSBG}
-                
-            className=''
+                layout='responsive'
+                alt='backgrond'
+
               />
 
             </div>

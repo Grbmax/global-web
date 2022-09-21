@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import styles from '../styles/Home.module.css'
 import { FaInstagram } from "react-icons/fa";
 import { FiFacebook, FiMail, FiTwitter, FiSend } from "react-icons/fi";
@@ -58,13 +58,9 @@ const Footer = () => {
     return (
         <>
             <div id="footer" className={styles.footerbgimg}>
-                
+
                 <div className="flex flex-wrap">
                     <div className='contacts w-full md:w-1/2 lg:w-1/2'>
-                        <div className='flex text-2xl lg:text-3xl font-extrabold justify-center items-center p-5 '>
-                            Got An Idea ?
-                        </div>
-
                         <Form />
                     </div>
 
@@ -104,7 +100,7 @@ const Footer = () => {
                             <button type='submit' >
                                 <FiSend className="text-3xl cursor-pointer hover:text-blue-600" />
                                 <span className="py-2 text-sm text-purple-400">
-                                    {/*    {errors?.emailID?.message}  */}
+                                    {/*    {errors?.emailID?.message}  
                                 </span>
                             </button>
                             <ToastContainer
@@ -156,7 +152,60 @@ const Footer = () => {
 
                 </div>
             </div>
-            
+
+            <hr />
+
+            <div className='copyright bg-black w-full h-10 flex justify-center items-center'>
+                ©Copyrights ÆR Media
+
+            </div>
+        </>
+    )
+}
+
+export default Footer */
+
+import React from 'react'
+import styles from '../styles/Home.module.css'
+import Caption from './Caption'
+import Contact from './Contact'
+import Email from './Email'
+import Form from './Form'
+import Office from './Office'
+import Socal from './Socal'
+const Footer = () => {
+    return (
+        <>
+            <div id="footer" className={styles.footerbgimg}>
+                <div className='p-5 lg:pl-20 lg:pr-20'>
+                    <span className='pt-10 text-xl w-full'>
+                        ÆR Global
+                    </span>
+                    <div className="flex flex-col lg:flex-row ">
+                        <div className="caption pt-10 lg:w-1/3">
+                            <Caption />
+                        </div>
+                        <div className="email pt-10 lg:w-1/3">
+                            <Email />
+                        </div>
+                        <div className="form pt-5 lg:w-1/3">
+                            <Form />
+                        </div>
+                    </div>
+                    <div className="flex flex-col lg:flex-row lg:pt-14 lg:pb-5">
+                        <div className="socal lg:w-1/3">
+                            <Socal />
+                        </div>
+                        <div className="office lg:w-1/3 pt-5">
+                            <Office />
+                        </div>
+                        <div className="office lg:w-1/3 pt-5">
+                            <Contact />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <hr />
 
             <div className='copyright bg-black w-full h-10 flex justify-center items-center'>

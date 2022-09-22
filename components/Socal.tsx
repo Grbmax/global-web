@@ -7,7 +7,7 @@ const Socal = () => {
     return (
         <div>
             <div className="social flex flex-col text-center mt-10 md:mt-0 lg:mt-0 items-center 
-    justify-center w-full md:w-1/2 lg:w-1/2">
+    justify-center w-full  lg:w-1/2">
                 <span className='text-[16px] lg:text-[18px] opacity-40 lg:opacity-100 pb-3 '>
                 Connect with us
                 </span>

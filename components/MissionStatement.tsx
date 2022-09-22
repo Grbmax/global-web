@@ -34,9 +34,7 @@ const MissionStatement = () => {
       <div ref={refContainer} className="">
 
         <div className="bg-black pt-10" >
-          <div className="h-20 w-32 md:h-28 md:w-36 lg:h-32 lg:w-48">
-            <VisionText />
-          </div>
+
           <div className='flex flex-col lg:flex-row pt-16 md:pt-8 lg:pt-10 '>
 
             <div className="flex w-full pl-5 text-[30px] md:text-5xl lg:text-6xl  ">
@@ -65,13 +63,15 @@ const MissionStatement = () => {
 
             </div>
 
-            <div className=' w-full  opacity-[35%] '>
-
+            <div className=' w-full'>
+              <div className="h-20 w-32 md:h-28 md:w-36 lg:h-32 lg:w-48 justify-end">
+                <VisionText />
+              </div>
               <Image
                 src={MSBG}
                 layout='responsive'
                 alt='backgrond'
-
+                className='opacity-[35%] z-10'
               />
 
             </div>

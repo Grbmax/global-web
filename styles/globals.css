@@ -2,17 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.google.com/specimen/Playfair+Display/tester?query=pla');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 body {
   background: black;
   color: white;
   line-height: 1.1;
   letter-spacing: 0em;
   z-index: -1;
-  font-family: 'Playfair Display';
-
-
+  font-family: 'Playfair Display', serif;
+  
+  
 }
 
 
@@ -217,24 +216,24 @@ div#text {
 }
 
 @-webkit-keyframes rotate {
-    from { -webkit-transform: rotate(360deg); }
-    to { -webkit-transform: rotate(0); }
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
 }
 @-moz-keyframes rotate {
-    from { -moz-transform: rotate(360deg); }
-    to { -moz-transform: rotate(0); }
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
 }
 @-ms-keyframes rotate {
-    from { -ms-transform: rotate(360deg); }
-    to { -ms-transform: rotate(0); }
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
 }
 @-o-keyframes rotate {
-    from { -o-transform: rotate(360deg); }
-    to { -o-transform: rotate(0); }
+    from { -o-transform: rotate(0deg); }
+    to { -o-transform: rotate(360deg); }
 }
 @keyframes rotate {
-    from { transform: rotate(360deg); }
-    to { transform: rotate(0); }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 /* vision animation end*/
 
@@ -344,3 +343,36 @@ figure.snip0015:hover figcaption::before {
 
 /* image hover end */
 
+
+/* underline hover left to right start   use this in className: hover-underline-animation*/
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+ 
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* underline hover left to right start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+.numtext 
+{
+font-family: 'Poppins', sans-serif;
+}

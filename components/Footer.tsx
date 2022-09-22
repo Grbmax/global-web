@@ -1,162 +1,41 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
-import { FaInstagram } from "react-icons/fa";
-import { FiFacebook, FiMail, FiTwitter, FiSend } from "react-icons/fi";
-import axios from 'axios';
-import { useForm } from 'react-hook-form';
-import Link from "next/link";
-import Form from './Form';
-import Address from './Address';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-
-
+import Caption from './Caption'
+import Contact from './Contact'
+import Email from './Email'
+import Form from './Form'
+import Office from './Office'
+import Socal from './Socal'
 const Footer = () => {
-    const { register, handleSubmit, formState: { errors }, } = useForm();
-    const onSubmit = async (values: any) => {
-        try {
-            const response = await
-                axios.post(`${window.location.origin}/api/data/newsletter`, values)
-            if (response.status == 200) {
-                console.log("Success!")
-                toast('🌍 Sucess! Welcome to the ÆR Family.', {
-                    position: "top-center",
-                    autoClose: 2500,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                });
-            } else if (response.status == 201) {
-                console.log(response.data.message)
-                toast('🚀 You are already subscribed to our newsletters.', {
-                    position: "top-center",
-                    autoClose: 2500,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                });
-            }
-        } catch (error) {
-            console.log("Something went wrong!")
-            toast.error('🚀 Error!', {
-                position: "top-center",
-                autoClose: 2500,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
-        }
-    };
-
     return (
         <>
             <div id="footer" className={styles.footerbgimg}>
-                
-                <div className="flex flex-wrap">
-                    <div className='contacts w-full md:w-1/2 lg:w-1/2'>
-                        <div className='flex text-2xl lg:text-3xl font-extrabold justify-center items-center p-5 '>
-                            Got An Idea ?
+                <div className='p-5 lg:pl-20 lg:pr-20'>
+                    <div className="flex flex-col lg:flex-row ">
+                        <div className="caption pt-10 pl-14 lg:w-1/3">
+                            <Caption />
                         </div>
-
-                        <Form />
+                        <div className="email pt-10 lg:w-1/3">
+                            <Email />
+                        </div>
+                        <div className="form pt-5 lg:w-1/3">
+                            <Form />
+                        </div>
                     </div>
-
-                    <div className="address w-full md:w-1/2 lg:w-1/2 p-5  ">
-                        <Address />
+                    <div className="flex flex-col lg:flex-row md:pt-5 lg:pt-14 lg:pb-5">
+                        <div className="socal lg:w-1/3">
+                            <Socal />
+                        </div>
+                        <div className="office lg:w-1/3 pt-5">
+                            <Office />
+                        </div>
+                        <div className="office lg:w-1/3 pt-5">
+                            <Contact />
+                        </div>
                     </div>
                 </div>
 
-                <div className="subscribe px-5 lg:px-0 mt-10 flex flex-wrap">
-                    <div className='w-full md:w-1/2 lg:w-1/2 flex flex-col ustify-center items-center'>
-                        <span className='text-2xl lg:text-3xl font-bold'>
-                            Subscribe To Our Newsletter
-                        </span><br />
-                        <form
-                            onSubmit={handleSubmit(onSubmit)}
-                            className='flex py-8 '>
-                            <input
-                                id='emailID'
-                                className='bg-transparent hover:bg-transparent border-b-2 w-80 outline-none'
-                                {...register("email", {
-                                    required: {
-                                        value: true,
-                                        message: "Valid Email ID is required",
-                                    },
-                                    maxLength: {
-                                        value: 120,
-                                        message: "You exceeded the maximum limit",
-                                    },
-                                    minLength: {
-                                        value: 8,
-                                        message: "Too short to be an Email ID",
-                                    },
-                                })}
-                                placeholder='Enter Email' />
-
-
-                            <button type='submit' >
-                                <FiSend className="text-3xl cursor-pointer hover:text-blue-600" />
-                                <span className="py-2 text-sm text-purple-400">
-                                    {/*    {errors?.emailID?.message}  */}
-                                </span>
-                            </button>
-                            <ToastContainer
-                                position="top-right"
-                                autoClose={2500}
-                                hideProgressBar={false}
-                                newestOnTop={false}
-                                closeOnClick
-                                rtl={false}
-                                pauseOnFocusLoss
-                                draggable
-                                pauseOnHover
-
-                            />
-
-                        </form>
-                    </div>
-
-                    <div className="social flex flex-col text-center mt-10 md:mt-0 lg:mt-0 items-center 
-                    justify-center w-full md:w-1/2 lg:w-1/2">
-                        <span className='text-2xl lg:text-3xl font-bold pb-5 '>
-                            Stay Connected
-                        </span>
-                        <div className="flex gap-6 pb-5 m-2">
-                            <Link href='https://www.instagram.com/aerglobal.io/'>
-                                <div className=" outline outline-offset-4 outline-2 rounded-full hover:outline-pink-600 ">
-                                    <FaInstagram className="text-2xl cursor-pointer hover:text-pink-600 " />
-                                </div>
-                            </Link>
-                            <Link href=''>
-                                <div className=" outline outline-offset-4 outline-2 rounded-full hover:outline-blue-500">
-                                    <FiFacebook className="text-2xl cursor-pointer hover:text-blue-500" />
-                                </div>
-                            </Link>
-                            <a href='mailto:contact@aerglobal.io'>
-                                <div className=" outline outline-offset-4 outline-2 rounded-full hover:outline-yellow-600">
-                                    <FiMail className="text-2xl cursor-pointer hover:text-yellow-600" />
-                                </div>
-                            </a>
-                            <Link href='https://twitter.com/GlobalAera'>
-                                <div className=" outline outline-offset-4 outline-2 rounded-full hover:outline-blue-300">
-                                    <FiTwitter className="text-2xl cursor-pointer hover:text-blue-300" />
-                                </div>
-                            </Link>
-
-                        </div>
-
-                    </div>
-
-                </div>
             </div>
-            
             <hr />
 
             <div className='copyright bg-black w-full h-10 flex justify-center items-center'>

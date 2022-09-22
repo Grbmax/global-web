@@ -3,7 +3,7 @@ import { GiVideoCamera } from 'react-icons/gi';
 import { BsBuilding } from 'react-icons/bs';
 import { GiMoneyStack} from 'react-icons/gi';
 import { TbDrone } from 'react-icons/tb';
-import Image from 'next/image';
+
 
 
 const About = () => {

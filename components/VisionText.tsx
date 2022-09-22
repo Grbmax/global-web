@@ -21,7 +21,7 @@ const VisionText = () => {
           <g>
             <use xlinkHref="#circlePath" fill="none" />
             <text fill="#fff">
-              <textPath xlinkHref="#circlePath">. Vision .  Vision . Vision . Vision .Vision .Vision .</textPath>
+              <textPath xlinkHref="#circlePath">&nbsp;. manifesto &nbsp;.  manifesto &nbsp;. manifesto &nbsp;. manifesto </textPath>
             </text>
           </g>
         </svg>

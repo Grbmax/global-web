@@ -1,6 +1,7 @@
 import React, { useRef, useContext, useState, useCallback } from "react";
 import { ScrollContext } from "../utils/scroll-observer";
-import Navbar from "./Navbar";
+import Image from "next/image";
+
 
 
 const Masthehad: React.FC = () => {
@@ -27,7 +28,7 @@ const Masthehad: React.FC = () => {
         </div>
 
         <div>
-          <img src="assets/atlas0-1.png" width="300" height="300" />
+          <img src="assets/atlas0-1.png" width="300" height="300" alt="atlas"/>
         </div>
 
       </div>

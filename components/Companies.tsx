@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tile, TileContent, TileWrapper } from './Tile'
-import { CompanyTop, CompanyContainer, CompanyLeft, CompanyRight, CompanyBottom, CompanyLink } from './Company'
+import { CompanyContainer, CompanyLeft, CompanyRight, CompanyBottom, CompanyLink } from './Company'
 import Image from 'next/image'
 import MediaTextScroll from './MediaTextScroll'
 import RealtorTextScroll from './RealtorTextScroll'
@@ -8,16 +8,13 @@ import ConsultancyTextScroll from './ConsultancyTextScroll'
 
 
 const Companies = () => (
-    <TileWrapper numOfPages={3}>
 
+    <TileWrapper numOfPages={3} >
         <TileContent>
             <Tile
                 page={0}
                 renderContent={({ progress }) => (
-                    <CompanyContainer>
-                        {/*  <CompanyTop>
-                            <span>AER MEDIA AER MEDIA AER MEDIA AER MEDIA AER MEDIA AER MEDIA </span>
-                        </CompanyTop> */}
+                    <CompanyContainer >
                         <CompanyLeft progress={progress}>
                             <figure className="snip0015">
                                 <Image src="/assets/mediahero.png"
@@ -28,9 +25,6 @@ const Companies = () => (
                                     className='rounded-md' />
                                 <figcaption>
                                     <h2 className='text-2xl lg:text-3xl lg:p-8'>The &nbsp; <span className='italic font-extrabold'> Creative</span> &nbsp; Mind.</h2>
-
-
-
                                 </figcaption>
                             </figure>
                         </CompanyLeft>
@@ -65,12 +59,10 @@ const Companies = () => (
                     </CompanyContainer>
                 )}
             ></Tile>
+
             <Tile
                 page={1} renderContent={({ progress }) => (
                     <CompanyContainer>
-                        {/*        <CompanyTop>
-                            <span>AER REALTORS</span>
-                        </CompanyTop> */}
                         <CompanyLeft progress={progress}>
                             <figure className="snip0015">
                                 <Image src="/assets/realtorshero.png"
@@ -81,15 +73,12 @@ const Companies = () => (
                                     className='rounded-md' />
                                 <figcaption>
                                     <h2 className='text-2xl lg:text-3xl lg:p-8'>The &nbsp; <span className='italic font-extrabold'> Crafting</span> &nbsp; Mind.</h2>
-
-
-
                                 </figcaption>
                             </figure>
                         </CompanyLeft>
                         <CompanyRight progress={progress}>
                             <div className='text-white text-[28px] md:text-[34px] lg:text-[42px] flex justify-center lg:justify-start font-bold'>ÆR <span className='text-[#b7da46]'> &nbsp; REALTORS</span></div>
-                            <p className='py-5 lg:py-5 text-justify md:text-[22px] text-base lg:text-2xl'>
+                            <p className='py-2 lg:py-5 text-justify md:text-[22px] text-base lg:text-2xl'>
                                 ÆR Realtors is a brokerage,leasing and
                                 Real estate investment consultancy firm run by a team
                                 of experts providing tailor-made solutions for clients for
@@ -113,12 +102,10 @@ const Companies = () => (
                     </CompanyContainer>
                 )}
             ></Tile>
+
             <Tile
                 page={2} renderContent={({ progress }) => (
                     <CompanyContainer>
-                        {/*        <CompanyTop>
-                            <span>AER CONSULTANCY</span>
-                        </CompanyTop> */}
                         <CompanyLeft progress={progress}>
                             <figure className="snip0015">
                                 <Image src="/assets/consultancyhero.png"
@@ -129,17 +116,14 @@ const Companies = () => (
                                     className='rounded-md' />
                                 <figcaption>
                                     <h2 className='text-2xl lg:text-3xl lg:p-8'>The &nbsp; <span className='italic font-extrabold'>Connecting</span> &nbsp; Mind.</h2>
-
-
-
                                 </figcaption>
                             </figure>
                         </CompanyLeft>
                         <CompanyRight progress={progress}>
                             <div className='text-white text-[28px] sm:text-xl md:text-[34px] lg:text-[42px] flex justify-center lg:justify-start font-bold'>
                                 ÆR <span className='text-[#9747FF]'>&nbsp; CONSULTANCY </span>
-                                 </div>
-                            <p className='py-5 lg:py-5 text-justify md:text-[22px] text-base lg:text-2xl'>
+                            </div>
+                            <p className='py-2 lg:py-5 text-justify md:text-[22px] text-base lg:text-2xl'>
                                 ÆR consultancy commits to accelerate innovations that have a positive
                                 impact on the world. We are the driving force for your innovations
                                 through our offering of strategic consulting services,
@@ -164,6 +148,7 @@ const Companies = () => (
             ></Tile>
         </TileContent >
     </TileWrapper >
+
 )
 
 export default Companies

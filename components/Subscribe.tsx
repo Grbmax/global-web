@@ -78,7 +78,7 @@ const Subscribe = () => {
                 <button type='submit' >
                     <FiSend className="text-3xl cursor-pointer hover:text-blue-600" />
                     <span className="py-2 text-sm text-purple-400">
-                        {/*    {errors?.emailID?.message}  */}
+                       
                     </span>
                 </button>
                 <ToastContainer

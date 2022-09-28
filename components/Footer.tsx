@@ -22,8 +22,8 @@ const Footer = () => {
                             <Form />
                         </div>
                     </div>
-                    <div className="flex flex-col lg:flex-row md:pt-5 lg:pt-14 lg:pb-5">
-                        <div className="socal lg:w-1/3">
+                    <div className="flex flex-col lg:flex-row md:pt-5 lg:pt-5 lg:pb-5">
+                        <div className="social lg:w-1/3 pt-5">
                             <Socal />
                         </div>
                         <div className="office lg:w-1/3 pt-5">

@@ -31,7 +31,7 @@ const MissionStatement = () => {
   return (
     <>
 
-      <div ref={refContainer} className="">
+      <div ref={refContainer}>
 
         <div className="bg-black pt-10" >
 
@@ -39,7 +39,7 @@ const MissionStatement = () => {
 
             <div className="flex w-full pl-5 text-[30px] md:text-5xl lg:text-6xl  ">
 
-              <div className=' '>
+              <div className=''>
                 <span className={`${s.missionText} `}
                   style={{
                     opacity: opacityForBlock(progress, 0)
@@ -71,7 +71,7 @@ const MissionStatement = () => {
                 src={MSBG}
                 layout='responsive'
                 alt='backgrond'
-                className='opacity-[35%] z-10'
+                className='opacity-[50%] z-10'
               />
 
             </div>

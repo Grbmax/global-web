@@ -3,10 +3,11 @@ import { FaInstagram } from "react-icons/fa";
 import { FiFacebook, FiMail, FiTwitter, } from "react-icons/fi";
 import { GrLinkedinOption } from "react-icons/gr";
 import Link from "next/link";
+import Image from 'next/image';
 const Socal = () => {
     return (
         <div>
-            <div className="social flex flex-col text-center mt-10 md:mt-0 lg:mt-0 items-center 
+            <div className="social flex flex-col text-center mt-10 md:mt-0 lg:mt-0 lg:ml-16 items-center 
     justify-center w-full  lg:w-1/2">
                 <span className='text-[16px] lg:text-[18px] opacity-40 lg:opacity-100 pb-3 '>
                 Connect with us

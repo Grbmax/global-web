@@ -1,45 +1,19 @@
-import { getAllPostSlugs } from "../../lib/posts";
-const { SitemapStream, streamToPromise } = require("sitemap");
-const { Readable } = require("stream");
+export default function handler(req, res) {
 
-export default async (req, res) => {
-  try {
-    // An array with your links
-    const links = [];
-    getAllPostSlugs().map((post) => {
-      links.push({
-        url: `/blog/${post.params.slug}`,
-        changefreq: "daily",
-        priority: 0.9,
-      });
-    });
+  res.statusCode = 200
+  res.setHeader('Content-Type', 'text/xml')
+    
+    // Instructing the Vercel edge to cache the file
+    res.setHeader('Cache-control', 'stale-while-revalidate, s-maxage=3600')
+    
+    // generate sitemap here
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+    <url>
+      <loc>http://www.example.com/foo.html</loc>
+      <lastmod>2021-01-01</lastmod>
+    </url>
+    </urlset>`
 
-    // Add other pages
-    const pages = ["/courses", "/contact", "/newsletter", "/blog"];
-    pages.map((url) => {
-      links.push({
-        url,
-        changefreq: "daily",
-        priority: 0.9,
-      });
-    });
-
-    // Create a stream to write to
-    const stream = new SitemapStream({
-      hostname: `https://${req.headers.host}`,
-    });
-
-    res.writeHead(200, {
-      "Content-Type": "application/xml",
-    });
-
-    const xmlString = await streamToPromise(
-      Readable.from(links).pipe(stream)
-    ).then((data) => data.toString());
-
-    res.end(xmlString);
-  } catch (e) {
-    console.log(e);
-    res.send(JSON.stringify(e));
-  }
-};
+  res.end(xml)
+}

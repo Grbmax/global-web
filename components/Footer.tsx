@@ -12,7 +12,7 @@ const Footer = () => {
             <div id="footer" className={styles.footerbgimg}>
                 <div className='p-5 lg:pl-20 lg:pr-20'>
                     <div className="flex flex-col lg:flex-row ">
-                        <div className="caption pt-10 pl-14 lg:w-1/3">
+                        <div className="caption pt-10 pl-5 lg:pl-14 lg:w-1/3">
                             <Caption />
                         </div>
                         <div className="email pt-10 lg:w-1/3">
@@ -23,7 +23,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="flex flex-col lg:flex-row md:pt-5 lg:pt-5 lg:pb-5">
-                        <div className="social lg:w-1/3 pt-5">
+                        <div className="social lg:w-1/3 pt-0 lg:pt-5">
                             <Socal />
                         </div>
                         <div className="office lg:w-1/3 pt-5">
@@ -40,9 +40,9 @@ const Footer = () => {
 
             <div className='copyright bg-black w-full h-10 flex justify-center items-center'>
                 ©Copyrights ÆR Media
-
             </div>
-        </>
+           
+          </>
     )
 }
 

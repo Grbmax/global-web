@@ -55,7 +55,7 @@ const Form: React.FC = () => {
     return (
         <>
             <div className='flex text-2xl lg:text-3xl font-extrabold justify-center items-center p-5 '>
-                Got An Idea ?
+                Get In Touch
             </div>
             <div className='flex flex-col justify-center items-center p-5 pt-0'>
                 <form className='flex flex-col gap-4 mt-0 mx-10 lg:mt-0 w-80' onSubmit={handleSubmit(onAppointment)}>

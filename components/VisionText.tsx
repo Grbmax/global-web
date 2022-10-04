@@ -9,8 +9,8 @@ const VisionText = () => {
           xmlnsXlink="http://www.w3.org/1999/xlink"
           x="0px"
           y="0px"
-          width="50px"
-          height="50px"
+          width="60px"
+          height="60px" 
           viewBox="0 0 300 300"
           enableBackground="new 0 0 300 300"
           xmlSpace="preserve">

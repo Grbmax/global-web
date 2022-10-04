@@ -64,14 +64,14 @@ const MissionStatement = () => {
             </div>
 
             <div className=' w-full'>
-              <div className="h-20 w-32 md:h-28 md:w-36 lg:h-32 lg:w-48 justify-end">
+              <div className="h-28 w-32 md:w-48 lg:w-56 ml-48 md:ml-96 lg:ml-96 ">
                 <VisionText />
               </div>
               <Image
                 src={MSBG}
                 layout='responsive'
                 alt='backgrond'
-                className='opacity-[50%] z-10'
+                className='opacity-[80%] z-10'
               />
 
             </div>

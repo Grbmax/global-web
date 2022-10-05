@@ -20,16 +20,16 @@ const About = () => {
             <p className="text-xl md:text-2xl lg:text-[28px] lg-py-10 text-justify">
               We made a new start. A start that will build beautiful
               relationships, and shape millions of ideas: <br />
-              Enable a new way to live, learn, work and Earn. At ÆR we provide
+              Enable a new way to live, learn, work and earn. At ÆR we provide
               services of the future to make your business dreams a reality.
             </p>
           </div>
           <div className="">
             <p className="text-xl md:text-2xl lg:text-[28px] py-10 w-full  text-justify">
               We as a conglomerate have branched out to various enterprises of
-              Tech, Real estate, Marketing, and Consultancy to help save
-              customers Time, Money, Risk, and Trouble related to business. ÆR
-              is one stop solution to All your business needs.
+              tech, real estate, marketing, and consultancy to help save
+              customers time, money, risk, and trouble related to business. ÆR
+              is one stop solution to all your business needs.
             </p>
           </div>
         </div>

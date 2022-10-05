@@ -18,12 +18,15 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <meta name="description" content="ÆR Global" />
-        Explore a variety of services for real estate, Franchise models,
+        <meta
+          name="description"
+          content="Explore a variety of services for real estate, Franchise models,
         marketing services, and more business development solutions to expand or
-        start your business with ÆR
+        start your business with ÆR"
+        />
+
         <link rel="icon" href="/global.jpeg" />
-        <title>ÆR Global</title>
+        <title>ÆR &nbsp; Global</title>
       </Head>
       {loading ? (
         <div className="flex h-screen items-center justify-center">

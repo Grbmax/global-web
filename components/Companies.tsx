@@ -50,10 +50,10 @@ const Companies = () => (
                                 variety of B2B startups and medium to large businesses,
                                 we&apos;ve quickly learned that expanding a business can be quite a
                                 challenge. */}
-                ÆR Media offers A platter of services from Branding to Digital
-                Marketing We are a combination of creative minds and tech-savvy
-                digital strategists who map out best ways to To market your
-                Brand. While working with various B2B, B2C, D2C businesses we’ve
+                ÆR Media offers a platter of services from branding to digital
+                marketing we are a combination of creative minds and tech-savvy
+                digital strategists who map out best ways to market your
+                brand. While working with various B2B, B2C, D2C businesses we&apos;ve
                 learned the importance of showcasing the company well and a need
                 for functional strategy to stay ahead
               </p>
@@ -115,15 +115,15 @@ const Companies = () => (
                                 country in the right direction. */}
                 ÆR Realtors is leasing, development, and investment firm run by
                 a team of experts providing tailor-made solutions for placing
-                your brand in the Perfect Commercial locations for High ROI and
-                Maximum footfall compared to your competitors. With Our
-                Franchise model customers receive the benefits of optimized
+                your brand in the perfect commercial locations for high ROI and
+                maximum footfall compared to your competitors. With our
+                franchise model customers receive the benefits of optimized
                 service delivery through widely spread property shop process
                 knowledge.
               </p>
               <br />
               <p className="italic font-extrabold text-[20px]  md:text-[22px]  lg:text-2xl flex justify-center lg:justify-start ">
-                Your Door to a new opportunity!
+                Your door to a new opportunity!
               </p>
               {/*   <div className='py-10 z-40 '>
                                 <button className="flex mx-auto text-white bg-transparent 
@@ -173,7 +173,7 @@ const Companies = () => (
                                 through our offering of strategic consulting services,
                                 funding consultancy, Audits, Project management and More,
                                 which deliver impactful expertise for all business development stages. */}
-                ÆR consultancy commits to driving your innovations to success
+                ÆR Consultancy commits to driving your innovations to success
                 through our offering of strategic planning for finance, business
                 consulting, Project management, and More, to deliver impactful
                 expertise for all development stages from starting to expanding

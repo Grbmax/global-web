@@ -8,4 +8,4 @@ Disallow: /accounts
 User-agent: *
 Allow: /
 
-Sitemap: http://localhost:3000/api/my-sitemap
+Sitemap: https://aerglobal.io/api/my-sitemap

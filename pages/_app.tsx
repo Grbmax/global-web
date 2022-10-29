@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta
           name="description"
-          content="Explore a variety of services for real estate, franchise model, marketing and business development solutions with ÆR"
+          content="Explore a variety of services for creative software development, real estate, marketing and business development solutions with ÆR"
         />
 
         <link rel="icon" href="/global.jpeg" />

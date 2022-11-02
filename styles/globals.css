@@ -7,7 +7,7 @@ body {
   background: black;
   color: white;
   line-height: 1.1;
-  letter-spacing: 0em;
+  letter-spacing: 0.01em;
   z-index: -1;
   font-family: 'Playfair Display', serif;
   

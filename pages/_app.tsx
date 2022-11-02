@@ -28,7 +28,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/global.jpeg" />
         <title>ÆR Global &nbsp; &nbsp; &nbsp;</title>
         {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <Script
+      </Head>
+        {/* <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
         />
@@ -43,8 +44,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               });
           `,
           }}
-        />
-      </Head>
+        /> */}
 
       {loading ? (
         <div className="flex h-screen items-center justify-center">

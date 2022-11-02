@@ -10,11 +10,12 @@ body {
   letter-spacing: 0.01em;
   z-index: -1;
   font-family: 'Playfair Display', serif;
-  
-  
+      
 }
 
-
+html{
+  scroll-behavior: smooth ;
+}
 /* text scroll animation start */
 .wrapper-infinitescroll {
   max-width: 100%;

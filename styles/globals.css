@@ -7,15 +7,15 @@ body {
   background: black;
   color: white;
   line-height: 1.1;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.0em;
   z-index: -1;
   font-family: 'Playfair Display', serif;
       
 }
-
+/* 
 html{
   scroll-behavior: smooth ;
-}
+} */
 /* text scroll animation start */
 .wrapper-infinitescroll {
   max-width: 100%;

@@ -56,12 +56,12 @@ const Companies = () => (
                 we&apos;ve learned the importance of showcasing the company well
                 and a need for functional strategy to stay ahead
               </p>
-              <br />
-              <div className="italic font-bold text-[20px] md:text-[22px] lg:text-2xl flex justify-center lg:justify-start">
+              
+              <div className=" py-3 flex italic font-bold text-[18px] md:text-[22px] lg:text-2xl justify-center lg:justify-start">
                 That is where we come in!
               </div>
               {/* <CompanyLink href=''>
-                                <div className='py-10 z-40'>
+                                <div className=  sdf 'py-10  sdfdd z-40'>
                                     <button className="flex mx-auto text-white bg-transparent 
                                         border-2 py-2 px-8 focus:outline-none hover:bg-white 
                                         hover:text-black rounded-xl text-lg">
@@ -110,8 +110,8 @@ const Companies = () => (
                 service delivery through widely spread property shop process
                 knowledge.
               </p>
-              <br />
-              <p className="italic font-extrabold text-[20px]  md:text-[22px]  lg:text-2xl flex justify-center lg:justify-start ">
+              
+              <p className="py-3 flex italic font-bold text-[18px] md:text-[22px] lg:text-2xl justify-center lg:justify-start">
                 Your door to a new opportunity!
               </p>
               {/*   <div className='py-10 z-40 '>
@@ -160,8 +160,8 @@ const Companies = () => (
                 expertise for all development stages from starting to expanding
                 a business.
               </p>
-              <br />
-              <p className="flex italic font-bold text-[20px] md:text-[22px] lg:text-2xl justify-center lg:justify-start">
+              
+              <p className="py-3 flex italic font-bold text-[18px] md:text-[22px] lg:text-2xl justify-center lg:justify-start">
                 Let us help you succeed!
               </p>
 

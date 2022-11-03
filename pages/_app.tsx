@@ -27,8 +27,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
         <link rel="icon" href="/global.jpeg" />
         <title>ÆR Global &nbsp; &nbsp; &nbsp;</title>
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
       </Head>
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
         {/* <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}

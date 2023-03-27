@@ -14,14 +14,14 @@ const Contact = () => {
                     </a>
                 </Link>
             </div>
-            <div className="flex flex-row items-center justify-center gap-4">
+            {/* <div className="flex flex-row items-center justify-center gap-4">
                 <span className='numtext font text-[20px] lg:text-[24px]'>+(91)8007035533</span>
                 <Link href={'https://wa.me/+918007035533'}>
                     <a target={'_blank'}>
                         <BsWhatsapp className='text-xl cursor-pointer hover:text-green-400' />
                     </a>
                 </Link>
-            </div>
+            </div> */}
         </div>
     )
 }

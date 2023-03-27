@@ -6,6 +6,7 @@ import Email from './Email'
 import Form from './Form'
 import Office from './Office'
 import Socal from './Socal'
+import Link from 'next/link'
 const Footer = () => {
     return (
         <>
@@ -39,7 +40,12 @@ const Footer = () => {
             <hr />
 
             <div className='copyright bg-black w-full h-10 flex justify-center items-center'>
-                ©Copyrights ÆR Media
+                ©Copyrights ÆR Media.
+                <div className="p-1">
+                <Link href={'https://wa.me/+918007035533'}>
+                    Click to Contact Developer!
+                </Link>
+                </div>
             </div>
            
           </>

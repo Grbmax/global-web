@@ -15,14 +15,14 @@ const Office = () => {
                         </div>
                     </a>
                 </Link>
-                <Link href={'https://goo.gl/maps/TyUTMCt87gpTu2rW8'}>
+                {/* <Link href={'https://goo.gl/maps/TyUTMCt87gpTu2rW8'}>
                     <a target="_blank">
                         <div className="flex flex-row items-center justify-center gap-1 cursor-pointer">
                             <span className='hover-underline-animation text-[16px]'>Pune</span>
                             <BsArrowUpRight />
                         </div>
                     </a>
-                </Link>
+                </Link> */}
             </div >
         </div >
     )
